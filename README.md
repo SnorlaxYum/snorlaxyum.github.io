@@ -1,2 +1,2 @@
 # snorlaxyum.github.io
-Enjoy my personal blog at [https://snorl.ax](Snorl.ax)
+Enjoy my personal blog at [Snorl.ax](https://snorl.ax)
