@@ -1,0 +1,437 @@
+applet, object, abbr, acronym, address, big, cite, dfn, em, font, ins, kbd, q, s, samp, small, strike,  sub, sup, tt, var, dl, dt, dd, fieldset,  label, legend,
+
+
+article,
+aside,
+details,
+figure,
+footer,
+header,
+main,
+nav,
+section,.main-navigation ul .toggled-on,.no-js .main-navigation ul ul,.entry-content a img {
+	display: block
+}
+
+fieldset {
+	min-width: inherit
+}
+
+blockquote,
+q {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	quotes: none
+}
+
+dl,dd,p {
+	margin-bottom: 1.6em
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: "Aldrich";
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none
+}
+
+abbr[title] {
+	border-bottom: 1px dotted #fff;
+	cursor: help
+}
+
+mark,
+ins {
+	background-color: #fff9c0;
+	text-decoration: none
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sup {
+	bottom: 1ex
+}
+
+sub {
+	top: .5ex
+}
+
+small {
+	font-size: 75%
+}
+
+big {
+	font-size: 125%
+}
+
+dt {
+	font-weight: bold
+}
+
+figure,#cboxTitle {
+	margin: 0
+}
+
+/* must have higher specificity than alternative color schemes inline styles */
+.site .skip-link {
+	background-color: #f1f1f1;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	color: #21759b;
+	display: block;
+	font: bold 14px/normal "Aldrich", sans-serif;
+	left: -9999em;
+	outline: none;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	text-transform: none;
+	top: -9999em
+}
+
+.site .skip-link:focus {
+	clip: auto;
+	height: auto;
+	left: 6px;
+	top: 7px;
+	width: auto;
+	z-index: 100000
+}
+
+.clear:before,
+.clear:after,
+.site:before,
+.site:after,
+.entry-content:before,
+.entry-content:after,
+.site-content:before,
+.site-content:after,
+.nav-links:before,
+.nav-links:after,
+.social-navigation ul:before,
+.social-navigation ul:after {
+	content: "";
+	display: table
+}
+
+.clear:after,
+.site:after,
+.entry-content:after,
+.site-content:after,
+.nav-links:after,
+.social-navigation ul:after {
+	clear: both
+}
+.posted-on:before,
+.byline:before,
+.cat-links:before,
+.tags-links:before,
+.comments-link:before {
+	margin-right: 2px;
+	position: relative
+}
+
+.posted-on,
+.byline,
+.cat-links,
+.tags-links,
+.comments-link {
+	margin-right: 1em
+}
+
+.byline:before {
+	content: "\f304"
+}
+.page-title,#isso-thread > h4 {
+	font-family: "Aldrich", serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.3333
+}
+
+/**
+ * 16.1 Mobile Large 620px
+ */
+.hentry,
+	.page-header {
+		box-shadow: 0 0 1px rgba(0, 128, 128, 1);
+		margin: 0 7.6923%
+	}
+
+	.hentry + .hentry,
+	.page-header + .hentry {
+		margin-top: 7.6923%
+	}
+	.page-header {
+		border-bottom: 0;
+		border-left: 7px solid #333;
+		padding: 3.8461% 7.6923%
+	}
+
+	.page-title {
+		margin-left: -7px
+	}
+/**
+ * 16.2 Tablet Small 740px
+ */
+	p,
+	address,
+	pre,
+	hr,
+	ul,
+	ol,
+	dl,
+	dd,
+	table {
+		margin-bottom: 1.6471em
+	}
+	.posted-on:before,
+	.byline:before,
+	.cat-links:before,
+	.tags-links:before,
+	.comments-link:before {
+		top: 3px
+	}
+	.page-title,#isso-thread > h4 {
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 1.1667
+	}
+	.page-links {
+		margin-bottom: 1.4117em
+	}
+
+	.page-links a,
+	.page-links > span {
+		margin: 0 0.2857em 0.2857em 0
+	}
+/**
+ * 16.3 Tablet Large 880px
+ */
+	p,
+	address,
+	pre,
+	hr,
+	ul,
+	ol,
+	dl,
+	dd,
+	table {
+		margin-bottom: 1.6842em
+	}
+	.entry-footer,
+	.page-links a,
+	.page-links span,
+	.form-allowed-tags,
+	.site-info {
+		font-size: 16px;
+		font-size: 1.6rem
+	}
+	.posted-on:before,
+	.byline:before,
+	.cat-links:before,
+	.tags-links:before,
+	.comments-link:before{
+		top: 4px
+	}
+
+	.page-title,#isso-thread > h4 {
+		font-size: 27px;
+		font-size: 2.7rem;
+		line-height: 1.1852
+	}
+	.page-links {
+		margin-bottom: 1.4736em
+	}
+
+	.page-links a,
+	.page-links > span {
+		margin: 0 0.25em 0.25em 0
+	}
+/**
+ * 16.4 Desktop Small 955px
+ */
+	p,
+	address,
+	pre,
+	hr,
+	ul,
+	ol,
+	dl,
+	dd,
+	table {
+		margin-bottom: 1.6em
+	}
+	.entry-footer,
+	.page-links a,
+	.page-links span,
+	.site-info {
+		font-size: 12px;
+		font-size: 1.2rem
+	}
+	.hentry,
+	.page-header {
+		margin: 0 8.3333%
+	}
+
+	.hentry + .hentry,
+	.page-header + .hentry {
+		margin-top: 8.3333%
+	}
+	.posted-on:before,
+	.byline:before,
+	.cat-links:before,
+	.tags-links:before,
+	.comments-link:before {
+		top: 0
+	}
+	.page-title,#isso-thread > h4 {
+		font-size: 18px;
+		font-size: 1.8rem;
+		line-height: 1.3333
+	}
+
+	.page-links {
+		margin-bottom: 1.3333em
+	}
+
+	.page-links a,
+	.page-links > span {
+		margin: 0 0.3333em 0.3333em 0
+	}
+/**
+ * 16.5 Desktop Medium 1100px
+ */
+	p,
+	address,
+	pre,
+	hr,
+	ul,
+	ol,
+	dl,
+	dd,
+	table {
+		margin-bottom: 1.6471em
+	}
+	.entry-footer,
+	.page-links a,
+	.page-links span,
+	.site-info {
+		font-size: 14px;
+		font-size: 1.4rem
+	}
+	.posted-on:before,
+	.byline:before,
+	.cat-links:before,
+	.tags-links:before,
+	.comments-link:before {
+		top: 3px
+	}
+
+	.page-title,#isso-thread > h4 {
+		font-size: 24px;
+		font-size: 2.4rem;
+		line-height: 1.1667
+	}
+
+	.page-links {
+		margin-bottom: 1.4117em
+	}
+
+	.page-links a,
+	.page-links > span {
+		margin: 0 0.2857em 0.2857em 0
+	}
+/**
+ * 16.6 Desktop Large 1240px
+ */
+	p,
+	address,
+	pre,
+	hr,
+	ul,
+	ol,
+	dl,
+	dd,
+	table {
+		margin-bottom: 1.6842em
+	}
+	.entry-footer,
+	.page-links a,
+	.page-links span,
+	.site-info {
+		font-size: 16px;
+		font-size: 1.6rem
+	}
+	.posted-on:before,
+	.byline:before,
+	.cat-links:before,
+	.tags-links:before,
+	.comments-link:before {
+		top: 4px
+	}
+
+	.page-title,#isso-thread > h4{
+		font-size: 27px;
+		font-size: 2.7rem;
+		line-height: 1.1852
+	}
+
+	.page-links {
+		margin-bottom: 1.4736em
+	}
+
+	.page-links a,
+	.page-links > span {
+		margin: 0 0.25em 0.25em 0
+	}
+/**
+ * 17.0 Print
+ */
+	.site-header,
+	.site-footer,
+	.hentry,
+	.entry-footer,
+	.page-header {
+		background: none !important /* Make sure color schemes dont't affect to print */
+	}
+	body,
+	blockquote,
+	label,
+	a,
+	.site-title a,
+	.post-title,
+	.entry-footer,
+	.entry-footer a,
+	.site-info,
+	.site-info a {
+		color: #fff !important /* Make sure color schemes don't affect to print */
+	}
+
+	pre,
+	abbr[title],
+	table,
+	th,
+	td,
+	.site-header,
+	.site-footer,
+	.hentry + .hentry,
+	.page-header {
+		border-color: #eaeaea !important /* Make sure color schemes don't affect to print */
+	}
+	.page-header {
+		padding: 3.84615% 0
+	}
