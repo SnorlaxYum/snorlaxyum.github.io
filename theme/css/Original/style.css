@@ -19,7 +19,7 @@ body,input{
     text-shadow:1px 1px 1px #999
 }
 body:before{
-    background-image:url(../images/teal.jpg)
+    background-image:url(/theme/images/teal.jpg)
 }
 .entry-content h2{
     border-bottom:1px solid
@@ -94,7 +94,7 @@ hr,img,button::-moz-focus-inner,input::-moz-focus-inner,a img{
 }
 .page-header,.hentry,.site-footer,.secondary,.pagination,.site-header{
     background-color:teal!important;
-    background-image:url(../images/teal.jpg)
+    background-image:url(/theme/images/teal.jpg)
 }
 .social-navigation a:before,.secondary-toggle:before,.posted-on:before,.modified-link:before,.byline:before,.cat-links:before,.tags-links:before,.comments-link:before,.pagination .prev:before,.pagination .next:before,.entry-content .more-link:after{
     -moz-osx-font-smoothing:grayscale;
@@ -975,7 +975,7 @@ a:hover,a:focus{
         position:relative;
         width:29.4118%;
         background-color:teal;
-        background-image:url(../images/teal.jpg)
+        background-image:url(/theme/images/teal.jpg)
     }
     .search{
         font-size:12px;
