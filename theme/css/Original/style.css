@@ -42,7 +42,7 @@ html{
     padding:0 5% 5%;
     margin-top:-7%
 }
-article,aside,footer,header,main,nav,section,.main-navigation ul .toggled-on,.no-js .main-navigation ul ul{
+article,aside,footer,header,main,nav,section,.no-js .main-navigation ul ul{
     display:block
 }
 ol,ul{
@@ -59,9 +59,6 @@ th,td{
     font-weight:400;
     text-align:left
 }
-blockquote:before,blockquote:after,q:before,q:after{
-    content:""
-}
 blockquote{
     -webkit-hyphens:none;
     -moz-hyphens:none;
@@ -77,22 +74,6 @@ hr,img,button::-moz-focus-inner,input::-moz-focus-inner,a img{
 }
 #cboxContent,.cboxIframe,hr{
     background-color:#fff
-}
-.social-navigation a:before,.secondary-toggle:before,.posted-on:before,.modified-link:before,.byline:before,.cat-links:before,.tags-links:before,.comments-link:before,.pagination .prev:before,.pagination .next:before,.entry-content .more-link:after{
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    display:inline-block;
-    font-family:"Genericons";
-    font-size:16px;
-    font-style:normal;
-    font-weight:400;
-    font-variant:normal;
-    line-height:1;
-    speak:none;
-    text-align:center;
-    text-decoration:inherit;
-    text-transform:none;
-    vertical-align:top
 }
 body,button,input,select,textarea{
     color:#fff;
@@ -266,62 +247,6 @@ a:hover,a:focus{
 .main-navigation .menu-item-has-children > a{
     padding-right:48px
 }
-.social-navigation{
-    margin:9.0909% 0
-}
-.social-navigation ul{
-    list-style:none;
-    margin:0 0 -1.6em
-}
-.social-navigation li{
-    float:left
-}
-.social-navigation a{
-    display:block;
-    height:3.2em;
-    position:relative;
-    width:3.2em
-}
-.social-navigation a:before{
-    content:"\f415";
-    font-size:24px;
-    position:absolute;
-    top:0;
-    left:0
-}
-.secondary-toggle{
-    background-color:transparent;
-    border:1px solid #fff;
-    height:42px;
-    overflow:hidden;
-    padding:0;
-    position:absolute;
-    top:50%;
-    left:0;
-    text-align:center!important;
-    -webkit-transform:translateY(-50%);
-    -ms-transform:translateY(-50%);
-    transform:translateY(-50%);
-    width:42px
-}
-.secondary-toggle:before{
-    color:#fff;
-    content:"\f419";
-    line-height:40px;
-    width:40px
-}
-.secondary-toggle:hover,.secondary-toggle:focus{
-    background-color:transparent;
-    border:1px solid #fff;
-    outline:0
-}
-.secondary-toggle.toggled-on:before{
-    content:"\f405";
-    font-size:32px;
-    position:relative;
-    top:1px;
-    left:-1px
-}
 .pagination .nav-links{
     min-height:3.2em;
     position:relative;
@@ -344,48 +269,23 @@ a:hover,a:focus{
 }
 .pagination .prev,.pagination .next{
     -webkit-tap-highlight-color:rgba(255,255,255,0.3);
-    border-left:1px dotted;
     display:inline-block;
     height:48px;
     overflow:hidden;
     position:absolute;
     width:48px
 }
-.pagination .prev:before,.pagination .next:before{
-    font-size:32px;
-    height:48px;
-    line-height:48px;
-    position:relative;
-    width:48px
-}
 .pagination .prev{
+	border-right:1px dotted;
     left:0;
     padding:0
 }
-.pagination .prev:before{
-    content:"\f430";
-    left:-1px
-}
 .pagination .next{
+	border-left:1px dotted;
     right:0;
     padding:0
 }
-.pagination .next:before{
-    content:"\f429";
-    right:-1px
-}
-.screen-reader-text{
-    clip:rect(1px,1px,1px,1px);
-    height:1px;
-    overflow:hidden;
-    position:absolute!important;
-    width:1px
-}
-.site:before,.site:after,.entry-content:before,.entry-content:after,.site-content:before,.site-content:after,.nav-links:before,.nav-links:after,.social-navigation ul:before,.social-navigation ul:after{
-    content:"";
-    display:table
-}
-.site:after,.entry-content:after,.site-content:after,.nav-links:after,.social-navigation ul:after{
+.site:after,.entry-content:after,.site-content:after,.nav-links:after{
     clear:both
 }
 .site-header{
@@ -406,13 +306,7 @@ a:hover,a:focus{
     text-align:right
 }
 .secondary{
-    display:none;
     padding:0 7.6923%
-}
-.secondary.toggled-on{
-    border-top:1px solid transparent;
-    border-bottom:1px solid transparent;
-    display:block
 }
 .site-footer{
     border:1px dotted!important;
@@ -482,15 +376,6 @@ a:hover,a:focus{
 .entry-content a,a:focus{
     border-bottom:1px solid #fff
 }
-.entry-content .more-link{
-    white-space:nowrap
-}
-.entry-content .more-link:after{
-    content:"\f429";
-    font-size:16px;
-    position:relative;
-    top:5px
-}
 .entry-footer{
     background-color:rgba(0,0,0,0.3);
     font-size:12px;
@@ -500,35 +385,16 @@ a:hover,a:focus{
     border-radius:0 0 5px 5px;
     border-top:1px dotted
 }
-.posted-on:before,.modified-link:before,.cat-links:before,.tags-links:before,.comments-link:before{
-    margin-right:4px;
-    position:relative
-}
-.posted-on,.modified-link,.cat-links,.tags-links,.comments-link{
-    margin-right:1em
-}
-.posted-on:before{
-    content:"\f307"
-}
-.modified-link:before{
-    content:"\f420"
-}
-.cat-links:before{
-    content:"\f301"
-}
-.tags-links:before{
-    content:"\f302"
-}
-.comments-link:before{
-    content:"\f300"
+.posted-on,.modified-link,.cat-links,.tags-links,.comments-link,.spacer{
+    margin-right:0.5em
 }
 .comments-link{
     white-space:nowrap
 }
 .page-header{
-    border-bottom:1px solid rgba(51,51,51,0.1);
     padding:7.6923%;
-    border-radius:5px
+    border-radius:5px;
+    border:1px dotted
 }
 .page-title,#isso-thread > h4{
     font-size:18px;
@@ -540,7 +406,7 @@ a:hover,a:focus{
     font-size:1.2rem;
     line-height:1.5
 }
-#sidebar{height:100%;border:1px dotted}
+.sidebar{height:100%;border:1px dotted}
 @media screen and (min-width: 38.75em){
     ul,ol,blockquote > blockquote{
         margin-left:0
@@ -566,7 +432,7 @@ a:hover,a:focus{
         margin:7.6923% 7.6923% 0;
         padding:7.6923% 7.6923% 0
     }
-    .main-navigation,.social-navigation{
+    .main-navigation{
         margin-bottom:11.1111%
     }
     .main-navigation ul{
@@ -576,9 +442,6 @@ a:hover,a:focus{
     .main-navigation ul ul{
         border-top:0;
         border-bottom:0
-    }
-    .social-navigation{
-        margin-top:0
     }
     .site-main{
         padding:7.6923% 0
@@ -602,8 +465,6 @@ a:hover,a:focus{
         padding:4.5454% 9.0909%
     }
     .page-header{
-        border-bottom:0;
-        border-left:7px solid #333;
         padding:3.8461% 7.6923%
     }
     .page-title{
@@ -616,9 +477,6 @@ a:hover,a:focus{
     .pagination{
         margin:7.6923% 7.6923% 0;
         padding:0
-    }
-    .pagination .current .screen-reader-text{
-        position:absolute!important
     }
     .pagination .page-numbers{
         display:inline-block
@@ -668,21 +526,6 @@ a:hover,a:focus{
     }
     .main-navigation ul ul{
         margin-left:1em
-    }
-    .social-navigation ul{
-        margin-bottom:-1.4706em
-    }
-    .social-navigation a{
-        height:2.8824em;
-        width:2.8824em
-    }
-    .secondary-toggle{
-        height:56px;
-        width:56px
-    }
-    .secondary-toggle:before{
-        line-height:54px;
-        width:54px
     }
     .entry-footer,.page-links a,.page-links span,.site-info{
         font-size:14px;
@@ -755,13 +598,6 @@ a:hover,a:focus{
         margin-top:3.2941em;
         margin-bottom:1.6471em
     }
-    .entry-content .more-link:after{
-        font-size:24px;
-        top:2px
-    }
-    .posted-on:before,.modified-link:before,.cat-links:before,.tags-links:before,.comments-link:before{
-        top:3px
-    }
     .page-title,#isso-thread > h4{
         font-size:24px;
         font-size:2.4rem;
@@ -808,21 +644,6 @@ a:hover,a:focus{
     }
     .main-navigation a{
         padding:.75em 0
-    }
-    .social-navigation ul{
-        margin-bottom:-1.2632em
-    }
-    .social-navigation a{
-        height:2.5263em;
-        width:2.5263em
-    }
-    .secondary-toggle{
-        height:64px;
-        width:64px
-    }
-    .secondary-toggle:before{
-        line-height:62px;
-        width:62px
     }
     .entry-footer,.site-info{
         font-size:16px;
@@ -895,12 +716,6 @@ a:hover,a:focus{
         margin-top:3.3684em;
         margin-bottom:1.6842em
     }
-    .entry-content .more-link:after{
-        top:3px
-    }
-    .posted-on:before,.modified-link:before,.cat-links:before,.tags-links:before,.comments-link:before{
-        top:4px
-    }
     .page-title,#isso-thread > h4{
         font-size:27px;
         font-size:2.7rem;
@@ -909,7 +724,6 @@ a:hover,a:focus{
 }
 @media screen and (min-width: 59.6875em){
     body:before{
-        content:"";
         display:block;
         height:100%;
         min-height:100%;
@@ -927,7 +741,9 @@ a:hover,a:focus{
         float:left;
         margin-right:-100%;
         max-width:413px;
-        position:relative;
+        height:100%;
+        position:fixed;
+        overflow:auto;
         width:29.4118%
     }
     .search{
@@ -992,21 +808,6 @@ a:hover,a:focus{
     }
     .main-navigation .menu-item-has-children > a{
         padding-right:30px
-    }
-    .social-navigation{
-        margin:0 20% 20%
-    }
-    .social-navigation ul{
-        margin-bottom:-1.6em
-    }
-    .social-navigation li{
-        width:25%
-    }
-    .social-navigation a{
-        height:3.2em
-    }
-    .secondary-toggle{
-        display:none
     }
     .entry-footer,.site-info{
         font-size:12px;
@@ -1103,15 +904,8 @@ a:hover,a:focus{
         margin-top:3.2em;
         margin-bottom:1.6em
     }
-    .entry-content .more-link:after{
-        font-size:16px;
-        top:5px
-    }
     .entry-footer{
         padding:5% 10%
-    }
-    .posted-on:before,.modified-link:before,.cat-links:before,.tags-links:before,.comments-link:before{
-        top:0
     }
     .page-header{
         padding:4.1666% 8.3333%
@@ -1170,15 +964,6 @@ a:hover,a:focus{
     }
     .main-navigation .menu-item-has-children > a{
         padding-right:34px
-    }
-    .social-navigation ul{
-        margin-bottom:-1.4706em
-    }
-    .social-navigation li{
-        width:20%
-    }
-    .social-navigation a{
-        height:2.8824em
     }
     .entry-footer,.site-info{
         font-size:14px;
@@ -1247,13 +1032,6 @@ a:hover,a:focus{
         margin-top:3.2941em;
         margin-bottom:1.6471em
     }
-    .entry-content .more-link:after{
-        font-size:24px;
-        top:2px
-    }
-    .posted-on:before,.modified-link:before,.cat-links:before,.tags-links:before,.comments-link:before{
-        top:3px
-    }
     .page-title,#isso-thread > h4{
         font-size:24px;
         font-size:2.4rem;
@@ -1299,12 +1077,6 @@ a:hover,a:focus{
     }
     .main-navigation .menu-item-has-children > a{
         padding-right:38px
-    }
-    .social-navigation ul{
-        margin-bottom:-1.2632em
-    }
-    .social-navigation a{
-        height:2.5263em
     }
     .entry-footer,.site-info{
         font-size:16px;
@@ -1373,12 +1145,6 @@ a:hover,a:focus{
         margin-top:3.3684em;
         margin-bottom:1.6842em
     }
-    .entry-content .more-link:after{
-        top:3px
-    }
-    .posted-on:before,.modified-link:before,.cat-links:before,.tags-links:before,.comments-link:before{
-        top:4px
-    }
     .page-title,#isso-thread > h4{
         font-size:27px;
         font-size:2.7rem;
@@ -1396,7 +1162,7 @@ a:hover,a:focus{
         background:none!important;
         font-size:11.25pt
     }
-    .secondary-toggle,.navigation,.page-links,button,input,textarea,select{
+    .navigation,.page-links,button,input,textarea,select{
         display:none
     }
     .site-header,.site-footer,.hentry,.entry-footer,.page-header{
@@ -1427,24 +1193,6 @@ a:hover,a:focus{
         margin-top:7.6923%;
         padding:3.84615% 0
     }
-}
-.social-navigation a[href*="codepen.io"]:before,.genericon-codepen:before{
-    content:"\f216"
-}
-.social-navigation a[href*="digg.com"]:before{
-    content:"\f221"
-}
-.social-navigation a[href*="/feeds/"]:before{
-    content:"\f413"
-}
-.social-navigation a[href*="github.com"]:before{
-    content:"\f200"
-}
-.social-navigation a[href*="/tags/"]:before{
-    content:"\f302"
-}
-.social-navigation a[href*="twitter.com"]:before{
-    content:"\f202"
 }
 code{
     background-color:rgba(51,51,51,0.5)
