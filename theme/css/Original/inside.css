@@ -1,10 +1,7 @@
 #isso-thread input:focus[type="submit"]{font-weight:700}
-#isso-thread input:hover[type="submit"]{background: #FFf!important;color: teal!important}
+#isso-thread input:hover[type="submit"]{background: #FFF!important;color: #000!important}
 #isso-thread .textarea.placeholder{
 	color: rgba(255, 255, 255, 0.8)!important}
-#isso-thread a:hover {
-	color: #FFFF99!important
-}
 #isso-thread .textarea{word-break:break-all}
 #isso-thread input, #isso-thread .textarea.placeholder, #isso-thread .textarea {
     font-size: 90%
@@ -12,7 +9,7 @@
 .isso-comment > div.text-wrapper > .isso-comment-footer .upvote svg, .isso-comment > div.text-wrapper > .isso-comment-footer .downvote svg{margin-left: 1px;top:0!important}
 .isso-comment > div.text-wrapper > .isso-comment-footer,#isso-thread > h4,.isso-comment > div.text-wrapper > .isso-comment-header .author,.isso-comment > div.text-wrapper > .isso-comment-header .spacer, .isso-comment > div.text-wrapper > .isso-comment-header a.permalink, .isso-comment > div.text-wrapper > .isso-comment-header .note, .isso-comment > div.text-wrapper > .isso-comment-header a.parent,span,#isso-thread a,.isso-postbox > .form-wrapper > .auth-section .input-wrapper input,.isso-postbox > .form-wrapper .textarea,.isso-postbox > .form-wrapper > .auth-section .post-action > input{background-color:transparent!important;color:#fff!important}
 .isso-postbox > .form-wrapper .textarea,.isso-postbox > .form-wrapper > .auth-section .input-wrapper input,.isso-comment > div.avatar > svg, .isso-postbox > .avatar > svg{border: 1px solid rgba(255, 255, 255, 0.2)!important;
-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1)!important}
+box-shadow:0!important}
 .isso-comment:not(:first-of-type), .isso-follow-up .isso-comment{border-top: 1px solid rgba(255, 255, 255, 0.2)!important}
 .entry-content a img{display:inline}
 a.pic, a#cm{border:0}
