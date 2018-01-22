@@ -15,7 +15,7 @@ html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,del,strong,ol,ul,li,f
 body{background-color:#000}
 .selected{
     font-weight:700;
-    background:#FFF;
+    background:#aaa;
     padding-right:7px
 }
 .selected a{
@@ -70,10 +70,10 @@ hr,img,button::-moz-focus-inner,input::-moz-focus-inner,a img{
     border:0
 }
 #cboxContent,.cboxIframe,hr{
-    background-color:#fff
+    background-color:#aaa
 }
 body,button,input,select,textarea{
-    color:#fff;
+    color:#aaa;
     font-size:15px;
     font-size:1.5rem;
     line-height:1.6
@@ -89,7 +89,7 @@ b,strong{
     font-weight:700
 }
 blockquote{
-    border-left:4px solid #fff;
+    border-left:4px solid #aaa;
     background-color:#333;
     font-size:18px;
     font-size:1.8rem;
@@ -113,7 +113,7 @@ code,pre{
 }
 pre{
     background-color:#333;
-    border:1px solid #fff;
+    border:1px solid #aaa;
     line-height:1.2;
     margin-bottom:1.6em;
     overflow:auto;
@@ -197,13 +197,13 @@ button,input{
     font-family:inherit
 }
 input,textarea{
-    border:1px solid #fff;
-    color:#fff
+    border:1px solid #aaa;
+    color:#aaa
 }
 input:focus,textarea:focus,select:focus,#isso-thread .textarea:focus,#isso-thread input:focus{
     background-color:transparent;
-    color:#fff;
-    border-color:#fff!important
+    color:#aaa;
+    border-color:#aaa!important
 }
 button::-moz-focus-inner,input::-moz-focus-inner{
     padding:0!important
@@ -213,11 +213,11 @@ textarea{
     vertical-align:top
 }
 a{
-    color:#fff;
+    color:#aaa;
     text-decoration:none
 }
 a:hover,a:focus{
-    color:#000!important;background:#fff
+    color:#000!important;background:#aaa
 }
 .main-navigation a{
     display:block;
@@ -235,7 +235,7 @@ a:hover,a:focus{
 }
 .main-navigation li{
     text-align:right;
-    border-top:1px solid #fff;
+    border-top:1px solid #aaa;
     position:relative
 }
 .main-navigation .nav-menu > ul > li:first-child,.main-navigation .nav-menu > li:first-child{
@@ -370,7 +370,7 @@ a:hover,a:focus{
     margin-top:0
 }
 .entry-content h2,.entry-content a,a:focus{
-    border-bottom:1px solid #fff
+    border-bottom:1px solid #aaa
 }
 .entry-footer{
     background-color:#333;
@@ -432,8 +432,8 @@ a:hover,a:focus{
         margin-bottom:11.1111%
     }
     .main-navigation ul{
-        border-top:1px solid #fff;
-        border-bottom:1px solid #fff
+        border-top:1px solid #aaa;
+        border-bottom:1px solid #aaa
     }
     .main-navigation ul ul{
         border-top:0;
@@ -1196,7 +1196,7 @@ code{
 img{
     margin:5px;
     border-radius:5px
-}
+}a
 #text-2{
     margin-bottom:0!important
 }
