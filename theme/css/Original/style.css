@@ -21,7 +21,7 @@ body{background:#000}
 .selected a{
     color:#000
 }
-.hentry,.sidebar,.site-footer{box-shadow:0 0 2px rgba(255, 255, 255, 0.6)}
+.hentry,.sidebar,.site-footer,.pagination .nav-links{box-shadow:0 0 2px rgba(255, 255, 255, 0.6)}
 .pagination .prev,.pagination .next,.site-footer,.hentry,.sidebar{background:#222}
 html{
     -webkit-box-sizing:border-box;
@@ -249,7 +249,7 @@ a:hover,a:focus{
 .pagination .nav-links{
     min-height:3.2em;
     position:relative;
-    text-align:center;border:1px dotted;border-radius:5px
+    text-align:center;border-radius:5px;border:1px dotted #222
 }
 .pagination .current .screen-reader-text{
     position:static!important
@@ -275,12 +275,10 @@ a:hover,a:focus{
     width:48px
 }
 .pagination .prev{
-	border-right:1px dotted;
     left:0;
     padding:0
 }
 .pagination .next{
-	border-left:1px dotted;
     right:0;
     padding:0
 }
