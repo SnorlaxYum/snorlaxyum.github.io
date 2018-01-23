@@ -1198,9 +1198,9 @@ code{
 img{
     margin:5px;
     border-radius:5px
-}a
-#text-2{
-    margin-bottom:0!important
+}
+#i{
+    border:0!important
 }
 .search{
     -webkit-hyphens:auto;
