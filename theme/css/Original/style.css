@@ -727,13 +727,11 @@ a:hover,a:focus{
         z-index:0
     }
     .site{
-        margin:0 auto;
-        max-width:1403px
+        margin:0 auto
     }
     .sidebar{
         float:left;
         margin-right:-100%;
-        max-width:413px;
         height:100%;
         position:fixed;
         overflow:auto;
