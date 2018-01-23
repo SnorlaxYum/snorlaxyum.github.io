@@ -735,7 +735,7 @@ a:hover,a:focus{
         height:100%;
         position:fixed;
         overflow:auto;
-        width:29.4118%
+        width:20%
     }
     .search{
         font-size:12px;
@@ -758,8 +758,7 @@ a:hover,a:focus{
     .site-content{
         display:block;
         float:left;
-        margin-left:29.4118%;
-        width:70.5882%
+        margin-left:20%;width:80%
     }
     body{
         font-size:15px;
@@ -906,9 +905,9 @@ a:hover,a:focus{
     }
     .site-footer{
         float:left;
-        margin:0 0 0 35.2941%;
+        margin:0 0 0 26.7%;
         padding:0;
-        width:58.8235%
+        width:66.669%
     }
     .site-info{
         padding:5% 10%
