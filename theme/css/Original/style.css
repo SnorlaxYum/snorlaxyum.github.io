@@ -755,7 +755,6 @@ a:hover,a:focus{
         font-size:1.2rem
     }
     .secondary{
-        background:transparent;
         display:block;
         margin:0;
         padding:0
@@ -832,7 +831,6 @@ a:hover,a:focus{
         width:48px
     }
     .site-header{
-        background:transparent;
         border-bottom:0;
         margin:20% 0;
         padding:0 20%
