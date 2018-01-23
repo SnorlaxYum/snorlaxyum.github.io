@@ -397,7 +397,7 @@ a:hover,a:focus{
 .site-info{
     font-size:12px;
     font-size:1.2rem;
-    line-height:1.5
+    line-height:1.5;text-align:center
 }
 .sidebar{height:100%}
 @media screen and (min-width: 38.75em){
