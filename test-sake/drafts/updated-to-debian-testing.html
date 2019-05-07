@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>	<title>Updated to Debian testing - Terminal In A Simputer</title>
+	<meta charset=utf-8><link rel=canonical href=https://test.snorl.ax/drafts/updated-to-debian-testing.html>	<link href="https://test.snorl.ax/theme/css/style.css" rel=stylesheet><link href=https://test.snorl.ax/theme/css/inside.css rel=stylesheet>	<link href="https://test.snorl.ax/theme/images/icon.png" rel=icon>
+	<link href="https://test.snorl.ax/theme/images/icon-apple.png" rel=apple-touch-icon-precomposed>	<link href="https://test.snorl.ax/feeds/all.rss" rel=alternate title="Simputer RSS Feed" type=application/rss+xml><meta content=Debian name=tags><meta content=Chrome name=tags><meta content=Chromium name=tags><meta content=Nvidia name=tags><meta content=testing name=tags><meta content=Xfce name=tags>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://test.snorl.ax/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
+	<meta name=twitter:title content="Updated to Debian testing">
+	<meta name=twitter:description content="Hello new package!">	<meta content="width=device-width" name=viewport>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://test.snorl.ax/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
+	<meta name=twitter:title content="Updated to Debian testing">
+	<meta name=twitter:description content="Hello new package!"></head>
+
+<body>
+		<div id=a>
+			<header id=c>
+				<div id=d>
+					<h1 id=e><a href="https://test.snorl.ax/">Simputer</a></h1>
+				</div>
+			</header>
+			<div id=f>
+				<nav id=h>
+						<ul>							<li>
+								<a href=https://test.snorl.ax/>Home</a>
+									</li>									<li>
+										<a href="https://test.snorl.ax/browser/" >Browser</a>
+									</li>									<li id=i>
+										<a href="https://test.snorl.ax/terminal/" >Terminal</a>
+									</li></ul>
+				</nav>
+				<aside id=j>
+					<form action="https://test.snorl.ax/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+						<input placeholder="Search..."name=q id=tipue_search_input>
+					</form>
+				</aside></div>
+		</div>
+		<div id=b>
+				<main id=k><article id=m><header id=o><h2 id=p>Updated to Debian testing</h2></header><div id=n><p>Just waved goodbye to the heavy <strong>Gnome</strong> and leaped to <strong>Xfce</strong>.<br>
+Here's the desktop I'm proud of and currently using.<br>
+<a href="//static.snorl.ax/uploads/2017/02/xfce-d.png" title="It's much more beautiful than it looks here. The photo is just a minified version."><img src="//static.snorl.ax/uploads/2017/02/xfce-d-150x150.png"></a>  </p>
+<h2>Process</h2>
+<p>I've just upgraded my Debian 8.6 to testing following the Official <a href="https://wiki.debian.org/DebianTesting" target="_blank">Tutorial</a>. The steps:    </p>
+<ol>
+<li>
+<p>Edit your <code>/etc/apt/sources.list</code> file,  </p>
+<ol>
+<li>
+<p>changing <code>stable</code> (or the current codename for stable) to <code>testing</code> (or the current code name for the next stable release).  </p>
+</li>
+<li>
+<p>Remove or comment out your stable security updates line(s) (anything with security.debian.org in it).    </p>
+</li>
+<li>
+<p>Remove or comment out any other stable-specific lines, like <code>*-backports</code> or <code>*-updates</code>.  </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Run the following command to get new versions and security updates. U could run it every time u want to update.  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>apt-get update &amp;amp;&amp;amp; apt-get upgrade</span>
+</pre></div>
+
+
+<p>If you notice that some packages are not upgraded you should also try this:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>apt-get dist-upgrade</span>
+</pre></div>
+
+
+<p>But beware that this command will also install or remove packages, so do check carefully all proposed actions before proceeding.</p>
+</li>
+<li>
+<p>Check the version to see if it succeeds using the following command (<a href="https://linuxconfig.org/check-what-debian-version-you-are-running-on-your-linux-system" target="_blank">Source</a>):  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>cat /etc/debian_version</span>
+</pre></div>
+
+
+<p>For me, the output is <code>9.0</code>. So it's a success!  </p>
+</li>
+</ol>
+<h2>Aftermath</h2>
+<h3>Stop the display manager</h3>
+<p>(<a href="https://ubuntuforums.org/showthread.php?t=827606" target="_blank">Source</a>) There might be some errors afterwards, for example, when trying to install Chromium, I had to stop the xdm:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>/etc/init.d/xdm/ stop</span>
+</pre></div>
+
+
+<p>If u need to stop gdm, do this:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo /etc/init.d/gdm stop</span>
+</pre></div>
+
+
+<p>If u need to stop kdm, do:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo /etc/init.d/kdm stop</span>
+</pre></div>
+
+
+<h3>Watch the commands carefully</h3>
+<p>There might be some prompt about what to do in the Terminal, for example, I was prompted to do this several times to fix the false installation:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>apt-get -f install</span>
+</pre></div>
+
+
+<h3>Reinstall things</h3>
+<p>During the process something u need might be deleted, check it.  </p>
+<p>For example, <strong>Xfce4 mixer</strong> was removed and no longer available in Stretch so I had to install the alternatives to get another volume button in my panel (<a href="https://wiki.archlinux.org/index.php/Xfce#Xfce4_mixer" target="_blank">Source</a>):  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt install xfce4-pulseaudio-plugin pavucontrol</span>
+</pre></div>
+
+
+<p>Also I had to re-install catfish:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt install catfish</span>
+</pre></div>
+
+
+<p>and a lot of things. I won't show everything here 'cause ur case might be rather different from mine.  </p>
+<h3>Shadowsocks</h3>
+<p>Shadowsocks suddenly became unusable, and after searching I found a <a href="https://blog.lyz810.com/article/2016/09/shadowsocks-with-openssl-greater-than-110/" target="_blank">solution</a>:  </p>
+<ol>
+<li>
+<p>Edit the <code>openssl.py</code>:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo nano /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py</span>
+</pre></div>
+
+
+<p>The path might be different, u could check where shadowsocks is located:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo pip shadowsocks</span>
+</pre></div>
+
+
+<p>As for me, it returned these:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>Requirement already satisfied: shadowsocks in /usr/local/lib/python2.7/dist-packages</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Find <code>cleanup</code>, u'll find it among this:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)</span>
+</pre></div>
+
+
+<p>Change the <code>cleanup</code> to <code>reset</code>:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>libcrypto.EVP_CIPHER_CTX_reset.argtypes = (c_void_p,)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Find <code>cleanup</code> again, u'll find it among this:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>libcrypto.EVP_CIPHER_CTX_cleanup(self._ctx)</span>
+</pre></div>
+
+
+<p>Change the <code>cleanup</code> to <code>reset</code> again:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>libcrypto.EVP_CIPHER_CTX_reset(self._ctx)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Save &amp; Exit.  </p>
+</li>
+<li>
+<p>Run the shadowsocks again!  </p>
+</li>
+</ol>
+<h3>Switch the browser to Chrome (05 Feb 2017)</h3>
+<p>Yep I know Firefox is nice and it's my default browser when I was using a Windows system. It's the best choice for oldies like Windows XP, offering the access to SSL sites using SNI.  </p>
+<p>However I found Chromium less power-hungry and decided to switch to it. I tried and found it impossible to install extensions into the Chromium browser, every time it just returned "Installation is not enabled". Yep, I searched and tried and didn't found a solution.  </p>
+<p>So I downloaded Google Chrome from Google directly and it was able to install Proxy SwitchyOmega, what's more, the Chrome supports Flash by default! And SwitchyOmega is better than the proxy plugin in Firefox!  </p>
+<h3>Switch the browser to Chromium (13 Feb 2017)</h3>
+<p>Yesterday I reinstalled my Debian 'cause Nvidia broke it and made it impossible to access the Display Manager. So I reinstalled Chrome and unfortunately it didn't download and enable Flash automatically, making me tryin' to figure out a way to get Chromium working.  </p>
+<p>The things that prevented me from using Chromium:  </p>
+<ol>
+<li>Every time I tried to install an extention, the browser would refuse to do it with the message "Installation is not enabled".  </li>
+<li>I couldn't figure out a way to add Flash support to it after following the steps on Debian Wiki.  </li>
+</ol>
+<p>After googlin' I found <a href="http://askubuntu.com/a/216476" target="_blank">this</a> and <a href="" target="_blank">that</a> helpful. Here is the solution:  </p>
+<ol>
+<li>
+<p>Edit /etc/chromium.d/default-flags using the editor u like, I'm using Xfce so I ran:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo thunar /etc/chromium.d/default-flags</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Insert the code in the end and save</p>
+<div class="highlight"><pre><span class="code-line"><span></span># extension</span>
+<span class="code-line">export CHROMIUM_FLAGS=&quot;$CHROMIUM_FLAGS --enable-remote-extensions&quot;</span>
+<span class="code-line"></span>
+<span class="code-line"># Flash</span>
+<span class="code-line">export CHROMIUM_FLAGS=&quot;$CHROMIUM_FLAGS --ppapi-flash-path=/usr/lib/adobe-flashplugin/libpepflashplayer.so --ppapi-flash-version=24.0.0.194&quot;</span>
+</pre></div>
+
+
+<p>Note that <code>/usr/lib/adobe-flashplugin/libpepflashplayer.so</code> is the path of the Flash plugin for Chromium, to download it, click <a href="https://get.adobe.com/flashplayer/" target="_blank">here</a> in ur Chromium and download the <code>.tar.gz for Linux</code>.<br>
+Upon finishing downloading, u can extract it and find <code>Installing using the plugin tar.gz:</code> in the <code>readme.txt</code> and follow the step. As for me, it's:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>Unpack the plugin tar.gz and copy all the files to /usr/lib/adobe-flashplugin/</span>
+</pre></div>
+
+
+<p>The file of the plugin is <code>libpepflashplayer.so</code>, so after copyin', I see the path is <code>/usr/lib/adobe-flashplugin/libpepflashplayer.so</code></p>
+</li>
+</ol>
+<p><strong>2017-04-01 Update:</strong> I found on my newly updated Debian Sid that the following command works, making the manual way above useless! The following command add Flash Plugin to both Firefox and Chromium:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt install browser-plugin-freshplayer-pepperflash</span>
+</pre></div>
+
+
+<h3>Nvidia driver (13 Feb 2017)</h3>
+<p>To install that on Debian, read and follow <a href="https://wiki.debian.org/NvidiaGraphicsDrivers" target="_blank">this</a> wiki.  </p>
+<p>After installing and executing <code>nvidia-xconfig</code> and rebooting, I found the system boot into blank screen.  </p>
+<p>After googing, I found <a href="http://forums.debian.net/viewtopic.php?f=30&t=119055" target="_blank">this</a> and pressed <code>Alt+Ctrl+F1</code> and followed the step rburkholder's post mentioned (Yep my Debian is 64 bit):  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install nvidia-kernel-3.16.0-4-amd64</span>
+</pre></div>
+
+
+<p>Then it rebooted into blank again, so I pressed <code>Alt+Ctrl+F1</code> and uninstalled nvidia-xconfig:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt purge nvidia-xconfig</span>
+</pre></div>
+
+
+<p>Nothing happened, and I then deleted the configuration file:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo rm /etc/X11/xorg.conf</span>
+</pre></div>
+
+
+<p>This time it booted into lightdm again!  </p>
+<p>I read the part about configuration on the wiki again and found this:  </p>
+<blockquote>
+<p>However, the configuration described below should not be applied to Nvidia Optimus systems; on such systems, the primary X display is driven by your Intel GPU, which is autodetected by X. See Bumblebee for more details on how to configure an Optimus system.</p>
+</blockquote>
+<p>So I followed the link Bumblebee and installed Bumblebee.  </p>
+<p><strong>2017-04-01 Update:</strong> The way above is outdated and useless for Nvidia Optimus, making the battery life shorter. Check this <a href="/diy/2017/03/31/saving-power-in-debian/" target="_blank">post</a> out and find "Use Intel Graphical Card".  </p>
+<h3>No sound in headphones when it is connected to the laptop</h3>
+<p>Thank <a href="http://askubuntu.com/questions/484122/no-sound-into-headphones" target="_blank">AskUbuntu</a> for helping me again!    </p>
+<p>Run this one in Terminal.  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>alsamixer</span>
+</pre></div>
+
+
+<p>Press <code>F6</code> and select <code>HDA Intel PCH</code> and test.  </p>
+<p>Done!  </p>
+<hr>
+<p>If u haven't tried Debian and wanna give a try, read my <a href="/diy/2017/01/05/my-experience-with-debian-86/" target="_blank">last post</a> about the installation first. The best way to install the testing version is install the current stable version first and update to the testing version afterwards!</p></div><footer id=q><b>Created:&nbsp;</b><time datetime="2017-02-05T10:00:00+01:00">February 05, 2017</time><span id=y>•</span><b>Updated:&nbsp;</b><time datetime="2017-04-03T16:10:00+02:00">April 03, 2017</time><span id=y>•</span>In a <a href="https://test.snorl.ax/terminal/"rel="category tag"><b>Terminal</b></a> Session<span id=y>•</span><b>Tags:&nbsp;</b><a href="https://test.snorl.ax/tags/debian/"rel=tag>Debian</a>,&nbsp;<a href="https://test.snorl.ax/tags/chrome/"rel=tag>Chrome</a>,&nbsp;<a href="https://test.snorl.ax/tags/chromium/"rel=tag>Chromium</a>,&nbsp;<a href="https://test.snorl.ax/tags/nvidia/"rel=tag>Nvidia</a>,&nbsp;<a href="https://test.snorl.ax/tags/testing/"rel=tag>testing</a>,&nbsp;<a href="https://test.snorl.ax/tags/xfce/"rel=tag>Xfce</a></footer></article>
+	<article id=m><div id=n><section id="comments"data-title="Updated to Debian testing"data-isso-id="/drafts/updated-to-debian-testing.html"></section></div></article>
+</main>
+		</div>
+		<footer id=g>
+			<div id=l>Simputer &#169; 2016 - 2019 (<a href="/archives/">Archives</a>) • Licensed under <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>Made using <a href="http://getpelican.com/" target="_blank">Pelican</a> • Design from <a href="https://wordpress.org/themes/twentyfifteen/" target="_blank">TwentyFifteen</a>
+			</div>
+		</footer>
+	<script data-isso="https://isso.snorl.ax/"data-isso-gravatar="true"data-isso-avatar="false"data-isso-reply-notifications="true"data-isso-reply-to-self="true"data-isso-css="false"src="https://test.snorl.ax/theme/js/embed.min.js"data-isso-lang=en></script>

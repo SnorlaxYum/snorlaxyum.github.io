@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>	<title>My Experience with Debian 8.6 - Terminal In A Simputer</title>
+	<meta charset=utf-8><link rel=canonical href=https://test.snorl.ax/drafts/my-experience-with-debian-86.html>	<link href="https://test.snorl.ax/theme/css/style.css" rel=stylesheet><link href=https://test.snorl.ax/theme/css/inside.css rel=stylesheet>	<link href="https://test.snorl.ax/theme/images/icon.png" rel=icon>
+	<link href="https://test.snorl.ax/theme/images/icon-apple.png" rel=apple-touch-icon-precomposed>	<link href="https://test.snorl.ax/feeds/all.rss" rel=alternate title="Simputer RSS Feed" type=application/rss+xml><meta content=Debian name=tags><meta content=Linux name=tags><meta content=Refus name=tags><meta content=win32diskimager name=tags><meta content=Windows name=tags><meta content=Wifi name=tags><meta content=Pelican name=tags><meta content=Shadowsocks name=tags><meta content=sudo name=tags><meta content=Flash name=tags><meta content=Firefox name=tags><meta content=Chromium name=tags><meta content=root name=tags><meta content=password name=tags><meta content=font name=tags><meta content=Gnome name=tags><meta content=Xfce name=tags>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://test.snorl.ax/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
+	<meta name=twitter:title content="My Experience with Debian 8.6">
+	<meta name=twitter:description content="That's awesome!">	<meta content="width=device-width" name=viewport>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://test.snorl.ax/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
+	<meta name=twitter:title content="My Experience with Debian 8.6">
+	<meta name=twitter:description content="That's awesome!"></head>
+
+<body>
+		<div id=a>
+			<header id=c>
+				<div id=d>
+					<h1 id=e><a href="https://test.snorl.ax/">Simputer</a></h1>
+				</div>
+			</header>
+			<div id=f>
+				<nav id=h>
+						<ul>							<li>
+								<a href=https://test.snorl.ax/>Home</a>
+									</li>									<li>
+										<a href="https://test.snorl.ax/browser/" >Browser</a>
+									</li>									<li id=i>
+										<a href="https://test.snorl.ax/terminal/" >Terminal</a>
+									</li></ul>
+				</nav>
+				<aside id=j>
+					<form action="https://test.snorl.ax/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+						<input placeholder="Search..."name=q id=tipue_search_input>
+					</form>
+				</aside></div>
+		</div>
+		<div id=b>
+				<main id=k><article id=m><header id=o><h2 id=p>My Experience with Debian 8.6</h2></header><div id=n><p><a href="//static.snorl.ax/uploads/2017/01/debian.png" title="Default Gnome desktop of Debian 8.6"><img src="//static.snorl.ax/uploads/2017/01/debian-150x150.png" height="150" width="150"></a>  </p>
+<p>My isso is hosted on a machine powered by Debian, which is fabulous for its light weight.   </p>
+<p>I always dreamed of moving to Debian when my 50.0 GB system disk was occupied by the Windows updates.   </p>
+<p>Last week, after getting rid of the fucking annoying exams, I downloaded the Debian 8.6 live install image with Gnome pre-configured and wrote it to my USB on my new computer using Refus and live previewed the system, amazing me much. (Click on <a href="https://www.debian.org/CD/live/" target="_blank">ME</a> to download one)  </p>
+<p>Then I started installing it, with the help of the <a href="http://www.maridonkers.info/installing-debian-with-hard-disk-encryption-and-windows-dual-boot/" target="_blank">guide</a> (The steps before Software selection r useful).   </p>
+<p><strong>Notice: </strong>The article makes sense even if u r using a newer version of Debian.  </p>
+<h2>Installation</h2>
+<h3>Stuck at 33%</h3>
+<p>It was stuck at 33%. I googled and found that it was due to the long time spent on formatting. I restarted and just erased the disk I needed to use and select the option "no" to keep from formatting. Then it solved.   </p>
+<h3>Stuck at installing GRUB Loader</h3>
+<p>Everything went well until it went to installing loader when both type couldn't be installed. So I searched again, finding out on a post from the Debian forum quoting one <a href="https://www.debian.org/releases/stable/amd64/ch04s03.html.en#usb-copy-isohybrid" target="_blank">page</a> of the Installation Guide from Debian wiki, including the reminder that "Do not use tools like unetbootin which alter the image". So I unzipped the original iso again to the USB disk and restarted the installation.   </p>
+<p>This time, it went to the end flawlessly.   </p>
+<p>Don't use win32diskimager, it will make ur USB unwritable, making it impossible to add any hardware to USB.  </p>
+<h2>Usage</h2>
+<p>Well Gnome is so awesome that I got used to it quickly. Still there's something to be done.   </p>
+<h3>Shadowsocks</h3>
+<p>It's a useful tool to access the banned sites in my country.  </p>
+<p>After trying several ways, I found the following one most effective (Thank the <a href="https://www.vpnhot.com/linux-shadowsocks.html" target="_blank">page</a> for helping me out):   </p>
+<ol>
+<li>
+<p>Install pip and Shadowsocks using the following commands:   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install python-pip</span>
+<span class="code-line"></span>
+<span class="code-line">sudo pip install shadowsocks</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Run the client using the following command (Replace the The.Server.Address, Port, Password and Decryption with ur own):   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sslocal -s The.Server.Address -p Port -l 1080 -k Password -t 600 -m Decryption</span>
+</pre></div>
+
+
+<p>For example, my VPS address is 194.136.234.24 and it has configured Shadowsocks on the port 3489 and the password is 123456 and the decryption is aes-256-cfb, the command will be:   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sslocal -s 194.136.234.24 -p 3489 -l 1080 -k 123456 -t 600 -m aes-256-cfb</span>
+</pre></div>
+
+
+<p>Then install the Autoproxy-ng in the firefox. Click on Preferences on the dropdown menu of the globe, the window called "Autoproxy Preferences" will pop out. Then select Proxy Server - Edit Proxy Server, then add:  </p>
+<p><table><thead><tr><th>Give it a Name</th><th>Proxy Host:</th><th>Port:</th><th>http</th><th>socks4</th><th>socks5</th></tr></thead><tbody><tr><td>Shadowsocks</td><td>127.0.0.1</td><td>1080</td><td></td><td></td><td>*</td></tr></tbody></table>  </p>
+<p>Go to the original banned site, it's now accessible!  </p>
+</li>
+<li>
+<p>Make it run every time the system starts, I'm a fan of supervisor, so that's what I did:  </p>
+<ol>
+<li>
+<p>Install Supervisor</p>
+<div class="highlight"><pre><span class="code-line"><span></span>$ sudo apt-get install supervisor</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Add the config file (/etc/supervisor/conf.d/shadowsocks.conf) [Replace the The.Server.Address, Port, Password and Decryption with ur own]:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">[program:ss]</span></span>
+<span class="code-line"><span class="na">command</span> <span class="o">=</span> <span class="s">sslocal -s The.Server.Address -p Port -l 1080 -k Password -t 600 -m Decryption</span></span>
+<span class="code-line"><span class="na">user</span> <span class="o">=</span> <span class="s">root</span></span>
+<span class="code-line"><span class="na">autostart</span> <span class="o">=</span> <span class="s">true</span></span>
+<span class="code-line"><span class="na">autorestart</span> <span class="o">=</span> <span class="s">true</span></span>
+<span class="code-line"><span class="na">stdout_logfile</span> <span class="o">=</span> <span class="s">/opt/ss/supervisor.log</span></span>
+<span class="code-line"><span class="na">redirect_stderr</span> <span class="o">=</span> <span class="s">true</span></span>
+<span class="code-line"><span class="na">environment</span> <span class="o">=</span> <span class="s">LANG=en_US.UTF-8,LC_ALL=en_US.UTF-8</span></span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Run the file  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>$ sudo supervisorctl reread <span class="p">&amp;</span>amp<span class="p">;</span> sudo supervisorctl update</span>
+<span class="code-line">$ sudo supervisorctl start ss</span>
+</pre></div>
+
+
+</li>
+</ol>
+<p><strong>Notice: </strong>If u r using Debian Strench or newer version of Debian and find Shadowsocks unusable, click <a href="/diy/2017/02/05/updated-to-debian-testing/" target="_blank">here</a> and find <code>Shadowsocks</code> to solve it!  </p>
+</li>
+</ol>
+<h3>Flash on the Firefox</h3>
+<p>Currently Flash is still the better solution compared to HTML5 when it comes to some media such as videos. (Thank the guy for the <a href="https://forums.kali.org/showthread.php?977-Install-Flash-Player-for-Iceweasel-Firefox-in-3-Simple-Steps" target="_blank">guide</a>)   </p>
+<ol>
+<li>Launch the browser and download the Flash Player in a seperate folder.       Download link = http://get.adobe.com/flashplayer/ </li>
+<li>
+<p>Launch the terminal and open the folder path where downloaded flash file is stored then run the following command.  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>tar xzvf install_flash_player_11_linux.i386.tar.gz</span>
+</pre></div>
+
+
+<p>If in case your downloaded file having some another name then put that file name during extracting   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>tar xzvf yourdownloadedfilename.tar.gz</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Now run the following last command (Remember: Do not change the folder path and stay in the same folder where you unpacked the files):   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>cp libflashplayer.so /usr/lib/mozilla/plugins/</span>
+</pre></div>
+
+
+</li>
+</ol>
+<p><strong>2017-04-01 Update:</strong> I found on my newly updated Debian Sid that the following command works, making the manual way above useless! The following command add Flash Plugin to both Firefox and Chromium:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt install browser-plugin-freshplayer-pepperflash</span>
+</pre></div>
+
+
+<h3>Flash on the Chromium</h3>
+<p>Click <a href="/diy/2017/02/05/updated-to-debian-testing/" target="_blank">here</a> and find <code>Switch the browser to Chromium</code>  </p>
+<p><strong>2017-04-01 Update:</strong> I found on my newly updated Debian Sid that the following command works, making the manual way above useless! The following command add Flash Plugin to both Firefox and Chromium:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt install browser-plugin-freshplayer-pepperflash</span>
+</pre></div>
+
+
+<h3>Execute sudo without password</h3>
+<p>Thank the <a href="http://askubuntu.com/questions/147241/execute-sudo-without-password" target="_blank">tutorial</a> for helping me in doing so.   </p>
+<ol>
+<li>
+<p>Switch to root user and type the password and enter:   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>su</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Edit the sudoers file:   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>visudo</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Type the following in the bottom (Be sure to replace <code>username</code> with yours, for example, mine is <code>snorlax</code>, so I replaced it with <code>snorlax</code>)   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>username ALL=(ALL) NOPASSWD: ALL</span>
+</pre></div>
+
+
+<p>It looks just like this: </p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="cp">#</span></span>
+<span class="code-line"><span class="cp"># This file MUST be edited with the &#39;visudo&#39; command as root.</span></span>
+<span class="code-line"><span class="cp">#</span></span>
+<span class="code-line"><span class="cp"># Please consider adding local content in /etc/sudoers.d/ instead of</span></span>
+<span class="code-line"><span class="cp"># directly modifying this file.</span></span>
+<span class="code-line"><span class="cp">#</span></span>
+<span class="code-line"><span class="cp"># See the man page for details on how to write a sudoers file.</span></span>
+<span class="code-line"><span class="cp">#</span></span>
+<span class="code-line"><span class="n">Defaults</span>        <span class="n">env_reset</span></span>
+<span class="code-line"><span class="n">Defaults</span>        <span class="n">mail_badpass</span></span>
+<span class="code-line"><span class="n">Defaults</span>        <span class="n">secure_path</span><span class="o">=</span><span class="s">&quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:$</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="cp"># Host alias specification</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="cp"># User alias specification</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="cp"># Cmnd alias specification</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="cp"># User privilege specification</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="cp"># Allow members of group sudo to execute any command</span></span>
+<span class="code-line"><span class="nf">%sudo</span>   <span class="n">ALL</span><span class="o">=</span><span class="p">(</span><span class="nl">ALL</span><span class="p">:</span><span class="n">ALL</span><span class="p">)</span> <span class="n">ALL</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="cp"># See sudoers(5) for more information on &quot;#include&quot; directives:</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="cp">#include</span><span class="cpf">dir /etc/sudoers.d</span><span class="cp"></span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">username</span> <span class="n">ALL</span><span class="o">=</span><span class="p">(</span><span class="n">ALL</span><span class="p">)</span> <span class="nl">NOPASSWD</span><span class="p">:</span> <span class="n">ALL</span></span>
+</pre></div>
+
+
+</li>
+</ol>
+<h3>Show the emoji correctly</h3>
+<p>Install ancient fonts using the command.   </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install ttf-ancient-fonts</span>
+</pre></div>
+
+
+<h3>Install the fonts manually in Xfce</h3>
+<p>I recently switched from Gnome to the much lighter Xfce, it does not have any font viewer so installing fonts is not one-click away here. The following commands assumes you have copied fonts in your Home directory. (<a href="https://tranjeeshan.wordpress.com/2015/07/04/how-to-install-fonts-in-debian-xfce-using-commandline/" target="_blank">Source</a>)  </p>
+<ol>
+<li>
+<p>Open Terminal. Go to the fonts folder:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>cd /usr/local/share/fonts</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>This command would direct to the fonts folder. Now to copy the fonts from Home directory to the fonts folder:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo cp ~/*.ttf</span>
+</pre></div>
+
+
+<p>This would copy all the TrueType Fonts (TTFs) from Home directory.  </p>
+</li>
+<li>
+<p>If you want to copy any specific font, do this:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo cp ~/fontname.ttf</span>
+</pre></div>
+
+
+<p>Now change the administrative rights of these fonts:</p>
+<div class="highlight"><pre><span class="code-line"><span></span>sudo chown root *.ttf</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Now go back to the root directory:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>cd ..</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Now for system-wide implementations of these fonts, do the following:</p>
+<div class="highlight"><pre><span class="code-line"><span></span>fc-cache</span>
+</pre></div>
+
+
+</li>
+</ol>
+<h3>Others</h3>
+<p>Add something I need following the official guide:  </p>
+<ol>
+<li><a href="https://wiki.debian.org/WiFi" target="_blank">Wifi</a>  </li>
+<li><a href="http://docs.getpelican.com/en/stable/index.html" target="_blank">Pelican</a></li>
+<li>More......  </li>
+</ol>
+<h2>Feel?</h2>
+<p>I'd like to say, Debian runs a command in the Terminal much faster than the speed at which Windows 10 runs a command in the Powershell. If u use a static site generator locally, u can try urself.   </p>
+<p>Besides, with Debian and Virtualbox, most of the work can be done.   </p>
+<p>BTW, I've only used 8.8 GB of the disk, much less than Windows 10.</p></div><footer id=q><b>Created:&nbsp;</b><time datetime="2017-01-05T01:40:00+01:00">January 05, 2017</time><span id=y>•</span><b>Updated:&nbsp;</b><time datetime="2017-04-01T12:00:00+02:00">April 01, 2017</time><span id=y>•</span>In a <a href="https://test.snorl.ax/terminal/"rel="category tag"><b>Terminal</b></a> Session<span id=y>•</span><b>Tags:&nbsp;</b><a href="https://test.snorl.ax/tags/debian/"rel=tag>Debian</a>,&nbsp;<a href="https://test.snorl.ax/tags/linux/"rel=tag>Linux</a>,&nbsp;<a href="https://test.snorl.ax/tags/refus/"rel=tag>Refus</a>,&nbsp;<a href="https://test.snorl.ax/tags/win32diskimager/"rel=tag>win32diskimager</a>,&nbsp;<a href="https://test.snorl.ax/tags/windows/"rel=tag>Windows</a>,&nbsp;<a href="https://test.snorl.ax/tags/wifi/"rel=tag>Wifi</a>,&nbsp;<a href="https://test.snorl.ax/tags/pelican/"rel=tag>Pelican</a>,&nbsp;<a href="https://test.snorl.ax/tags/shadowsocks/"rel=tag>Shadowsocks</a>,&nbsp;<a href="https://test.snorl.ax/tags/sudo/"rel=tag>sudo</a>,&nbsp;<a href="https://test.snorl.ax/tags/flash/"rel=tag>Flash</a>,&nbsp;<a href="https://test.snorl.ax/tags/firefox/"rel=tag>Firefox</a>,&nbsp;<a href="https://test.snorl.ax/tags/chromium/"rel=tag>Chromium</a>,&nbsp;<a href="https://test.snorl.ax/tags/root/"rel=tag>root</a>,&nbsp;<a href="https://test.snorl.ax/tags/password/"rel=tag>password</a>,&nbsp;<a href="https://test.snorl.ax/tags/font/"rel=tag>font</a>,&nbsp;<a href="https://test.snorl.ax/tags/gnome/"rel=tag>Gnome</a>,&nbsp;<a href="https://test.snorl.ax/tags/xfce/"rel=tag>Xfce</a></footer></article>
+	<article id=m><div id=n><section id="comments"data-title="My Experience with Debian 8.6"data-isso-id="/drafts/my-experience-with-debian-86.html"></section></div></article>
+</main>
+		</div>
+		<footer id=g>
+			<div id=l>Simputer &#169; 2016 - 2019 (<a href="/archives/">Archives</a>) • Licensed under <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>Made using <a href="http://getpelican.com/" target="_blank">Pelican</a> • Design from <a href="https://wordpress.org/themes/twentyfifteen/" target="_blank">TwentyFifteen</a>
+			</div>
+		</footer>
+	<script data-isso="https://isso.snorl.ax/"data-isso-gravatar="true"data-isso-avatar="false"data-isso-reply-notifications="true"data-isso-reply-to-self="true"data-isso-css="false"src="https://test.snorl.ax/theme/js/embed.min.js"data-isso-lang=en></script>

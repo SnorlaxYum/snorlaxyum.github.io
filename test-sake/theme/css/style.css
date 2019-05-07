@@ -1,0 +1,970 @@
+#more{
+    text-align:right
+}
+html,body,div,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,del,strong,ol,ul,li,form,table,tbody,tfoot,thead,tr,th,td{
+    border:0;
+    font-family:palatino linotype,book antiqua,Palatino,serif;
+    font-size:100%;
+    font-style:inherit;
+    font-weight:inherit;
+    margin:0;
+    outline:0;
+    padding:0;
+    color:#aaa;
+    vertical-align:baseline
+}
+footer{line-height:1.5;font-size:90%;word-wrap:break-word}
+input{
+    background:transparent;
+    border-radius:2px;
+    border:1px dotted;padding:5px;font-family:inherit;color:#aaa
+}
+body{
+    background:#000
+}
+#j input{width:100%}
+#i{
+    font-weight:700;
+    background:#aaa;
+    padding-right:7px
+}
+#i a{
+    color:#000
+}
+#m,#a,#g,#aa #z,#v{
+    box-shadow:0 0 2px rgba(255,255,255,.6)
+}
+#aa #ac,#aa #ad,#g,#m,#a{
+    background:#222
+}
+html{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow-y:scroll;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%
+}
+*,:before,:after{
+    -webkit-box-sizing:inherit;
+    -moz-box-sizing:inherit;
+    box-sizing:inherit
+}
+.page-content{
+    padding:0 5% 5%;
+    margin-top:-7%
+}
+article,aside,footer,header,main,nav,section,#h ul ul{
+    display:block
+}
+ol,ul{
+    list-style:none
+}
+table{
+    border-collapse:separate;
+    border-spacing:0
+}
+#aa{
+    min-height:3.2em;
+    border-radius:5px
+}
+th,td{
+    font-weight:400;
+    text-align:left
+}
+blockquote{
+    -webkit-hyphens:none;
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    hyphens:none;
+    quotes:none
+}
+hr,img,button::-moz-focus-inner,input::-moz-focus-inner,a img{
+    border:0
+}
+h1,h2,h3,h4,h5,h6{
+    clear:both;
+    font-weight:700
+}
+p{
+    margin-bottom:1.6em
+}
+b,strong{
+    font-weight:700
+}
+blockquote{
+    border-left:4px solid #aaa;
+    background:#111;
+    font-size:18px;
+    line-height:1.6667;
+    margin-bottom:1.6667em;
+    padding-left:.7778em
+}
+blockquote p{
+    margin-bottom:1.6667em
+}
+li>ul,li>ol,#n>:last-child,blockquote>p:last-child{
+    margin-bottom:0
+}
+code,pre{
+    font-family:monospace,courier;
+    font-size:90%;
+    -webkit-hyphens:none;
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    hyphens:none
+}
+pre{
+    background:#111;
+    border:1px solid #aaa;
+    line-height:1.2;
+    margin-bottom:1.6em;
+    overflow:auto;
+    padding:.8em;
+    font-size:80%
+}
+hr{
+    height:1px;
+    margin-bottom:1.6em
+}
+ul,ol{
+    margin:0 0 1.6em 1.3333em
+}
+ul{
+    list-style:disc
+}
+ol{
+    list-style:decimal
+}
+table,th,td{
+    border:1px dotted
+}
+table{
+    border-collapse:separate;
+    border-spacing:0;
+    border-width:1px 0 0 1px;
+    margin:0 0 1.6em;
+    table-layout:fixed;
+    width:100%
+}
+th{
+    font-weight:700
+}
+td{
+    font-weight:400
+}
+th,td{
+    border-width:0 1px 1px 0;
+    padding:.4em
+}
+img{
+    -ms-interpolation-mode:bicubic;
+    height:auto;
+    max-width:100%;
+    vertical-align:middle
+}
+::-webkit-input-placeholder{
+    color:rgba(255,255,255,.8)
+}
+:-moz-placeholder{
+    color:rgba(255,255,255,.8)
+}
+:-ms-input-placeholder{
+    color:rgba(255,255,255,.8)
+}
+::-moz-placeholder{
+    color:rgba(255,255,255,.8);
+    opacity:.8
+}
+button,input,select,textarea{
+    border-radius:2px;
+    font-size:16px;
+    line-height:1.5;
+    margin:0;
+    max-width:100%;
+    vertical-align:baseline
+}
+button,input{
+    -webkit-hyphens:none;
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    hyphens:none;
+    line-height:normal
+}
+input:focus,textarea:focus,select:focus{
+    background:#aaa!important;
+    color:#222!important
+}
+button::-moz-focus-inner,input::-moz-focus-inner{
+    padding:0!important
+}
+textarea{
+    overflow:auto;
+    vertical-align:top
+}
+a{
+    color:#aaa;
+    text-decoration:none
+}
+a:hover,a:focus{
+    color:#000!important;
+    background:#aaa
+}
+#h a{
+    display:block;
+    padding:.8em 0;
+    position:relative;
+    text-decoration:none
+}
+#h ul{
+    list-style:none;
+    margin:0
+}
+#h ul ul{
+    display:none;
+    margin-left:.8em
+}
+#h li{
+    text-align:right;
+    border-top:1px solid #aaa;
+    position:relative
+}
+#h ul>li:first-child{
+    border-top:0
+}
+#aa #z{
+    position:relative;
+    text-align:center;
+    border-radius:5px;
+    border:1px dotted #222
+}
+#aa #ab,#e,#h ul,#comments>h4{
+    text-transform:uppercase
+}
+#aa #ab{
+    display:inline-block;
+    font-weight:700
+}
+#aa{line-height:48px}
+#aa #ac,#aa #ad{
+    -webkit-tap-highlight-color:rgba(255,255,255,.3);
+    display:inline-block;
+    height:48px;
+    overflow:hidden;
+    position:absolute;
+    width:48px;font-size:48px;padding:4px 0 0 0
+}
+#aa #ac{
+    left:0
+}
+#aa #ad{
+    right:0
+}
+body:after,#n:after,#b:after,#z:after{
+    clear:both
+}
+#c{
+    padding:7.6923%
+}
+#d{
+    min-height:2em;
+    padding-right:60px;
+    position:relative
+}
+#e{
+    font-size:22px;
+    font-weight:700;
+    line-height:1.3636;
+    margin-bottom:0;
+    text-align:right
+}
+#f{
+    padding:0 7.6923%
+}
+#g{
+    padding:3.84615% 7.6923%;
+    border-radius:5px
+}
+#m{
+    padding-top:7.6923%;
+    position:relative;
+    border-radius:5px
+}
+#o{
+    padding:0 7.6923%
+}
+#p{
+    font-size:26px;
+    line-height:1.1538;
+    margin-bottom:.9231em
+}
+#n{
+    padding:0 7.6923% 7.6923%;
+    -webkit-hyphens:auto;
+    -moz-hyphens:auto;
+    -ms-hyphens:auto;
+    hyphens:auto;
+    word-wrap:break-word
+}
+#n h1,#comments .x h1{
+    font-size:26px;
+    line-height:1.1538;
+    margin-top:1.8462em;
+    margin-bottom:.9231em
+}
+#n h2,#comments .x h2{
+    font-size:22px;
+    line-height:1.3636;
+    margin-top:2.1818em;
+    margin-bottom:1.0909em
+}
+#n h3,#comments .x h3{
+    font-size:18px;
+    line-height:1.3333;
+    margin-top:2.6667em;
+    margin-bottom:1.3333em
+}
+#n h4,#n h5,#n h6,#comments .x h6,#comments .x h5,#comments .x h4{
+    font-size:15px;
+    line-height:1.2;
+    margin-top:3.2em;
+    margin-bottom:1.6em
+}
+#n h5,#n h6{
+    letter-spacing:.1em;
+    text-transform:uppercase
+}
+#n>h1:first-child,#n>h2:first-child,#n>h3:first-child,#n>h4:first-child,#n>h5:first-child,#n>h6:first-child,#comments h4{
+    margin-top:0
+}
+#n h2,#n a,a:focus{
+    border-bottom:1px solid #aaa
+}
+#q{
+    background:#111;
+    padding:3.8461% 7.6923%;
+    border-radius:0 0 5px 5px
+}
+#y{
+    margin:0 .5em 0 .5em
+}
+#v{
+    padding:7.6923%;
+    border-radius:5px;
+    border:1px dotted #222
+}
+#w,#comments>h4{
+    font-size:18px;
+    line-height:1.3333
+}
+#l{
+    text-align:center
+}
+#a{
+    height:100%
+}
+@media screen and (min-width:38.75em){
+    ul,ol,blockquote>blockquote{
+        margin-left:0
+    }
+    #j{
+        margin-bottom:11.1111%
+    }
+    li>ul,li>ol,blockquote>ul,blockquote>ol{
+        margin-left:1.3333em
+    }
+    blockquote{
+        margin-left:-1em
+    }
+    #d{
+        min-height:3.2em
+    }
+    #e{
+        font-size:22px;
+        line-height:1.0909
+    }
+    #f{
+        margin:7.6923% 7.6923% 0;
+        padding:7.6923% 7.6923% 0
+    }
+    #h{
+        margin-bottom:11.1111%
+    }
+    #h ul{
+        border-top:1px solid #aaa;
+        border-bottom:1px solid #aaa
+    }
+    #h ul ul{
+        border-top:0;
+        border-bottom:0
+    }
+    #k{
+        padding:7.6923% 0
+    }
+    #m,#v{
+        margin:0 7.6923%
+    }
+    #m+#m,#v+#m{
+        margin-top:7.6923%
+    }
+    #m+#m,#g,#aa{
+        border-top:0
+    }
+    #o{
+        padding:0 9.0909%
+    }
+    #n{
+        padding:0 9.0909% 9.0909%
+    }
+    #q{
+        padding:4.5454% 9.0909%
+    }
+    #v{
+        padding:3.8461% 7.6923%
+    }
+    #w{
+        margin-left:-7px
+    }
+    #g{
+        margin:0 7.6923%;
+        padding:3.84615% 7.6923%
+    }
+    #aa{
+        margin:7.6923% 7.6923% 0;
+        padding:0
+    }
+}
+@media screen and (min-width:46.25em){
+    body,button,input,select,textarea{
+        font-size:17px;
+        line-height:1.6471
+    }
+    p,pre,hr,ul,ol,table{
+        margin-bottom:1.6471em
+    }
+    blockquote{
+        font-size:20px;
+        line-height:1.75;
+        margin-bottom:1.75em;
+        margin-left:-1.05em;
+        padding-left:.85em
+    }
+    blockquote p{
+        margin-bottom:1.75em
+    }
+    pre{
+        line-height:1.2353
+    }
+    #h{
+        line-height:1.5
+    }
+    #h a{
+        padding:1em 0
+    }
+    #h ul ul{
+        margin-left:1em
+    }
+    #aa #z{
+        min-height:3.2941em
+    }
+    #aa{line-height:56px}
+    #aa #ac,#aa #ad{
+        height:56px;
+        padding:5px 0 0 0;
+        width:56px;font-size:56px
+    }
+    #d{
+        min-height:3.7059em;
+        padding-right:66px
+    }
+    #e{
+        font-size:29px;
+        line-height:1.2069
+    }
+    #p{
+        font-size:35px;
+        line-height:1.2;
+        margin-bottom:1.2em
+    }
+    #n h1{
+        font-size:35px;
+        line-height:1.2;
+        margin-top:1.6em;
+        margin-bottom:.8em
+    }
+    #n h2{
+        font-size:29px;
+        line-height:1.2069;
+        margin-top:1.931em;
+        margin-bottom:.9655em
+    }
+    #n h3{
+        font-size:24px;
+        line-height:1.1667;
+        margin-top:2.3333em;
+        margin-bottom:1.1667em
+    }
+    #n h4{
+        font-size:20px;
+        line-height:1.4;
+        margin-top:2.8em;
+        margin-bottom:1.4em
+    }
+    #n h5,#n h6{
+        font-size:17px;
+        line-height:1.2353;
+        margin-top:3.2941em;
+        margin-bottom:1.6471em
+    }
+    #w,#comments>h4{
+        font-size:24px;
+        line-height:1.1667
+    }
+}
+@media screen and (min-width:55em){
+    body,button,input,select,textarea{
+        font-size:19px;
+        line-height:1.6842
+    }
+    p,pre,hr,ul,ol,table{
+        margin-bottom:1.6842em
+    }
+    blockquote{
+        font-size:22px;
+        line-height:1.8182;
+        margin-bottom:1.8182em;
+        margin-left:-1.0909em;
+        padding-left:.9091em
+    }
+    blockquote p{
+        margin-bottom:1.8182em
+    }
+    pre{
+        line-height:1.2632
+    }
+    #h{
+        line-height:1.5
+    }
+    #h a{
+        padding:.75em 0
+    }
+    #aa #z{
+        min-height:3.3684em
+    }
+    #aa{line-height:64px}
+    #aa #ac,#aa #ad{
+        height:64px;
+        padding:6px 0 0 0;
+        width:64px;font-size:64px
+    }
+    #d{
+        min-height:3.7895em;
+        padding-right:74px
+    }
+    #e{
+        font-size:32px;
+        line-height:1.25
+    }
+    #p{
+        font-size:39px;
+        line-height:1.2308;
+        margin-bottom:1.2308em
+    }
+    #n h1{
+        font-size:39px;
+        line-height:1.2308;
+        margin-top:1.641em;
+        margin-bottom:.8205em
+    }
+    #n h2{
+        font-size:32px;
+        line-height:1.25;
+        margin-top:2em;
+        margin-bottom:1em
+    }
+    #n h3{
+        font-size:27px;
+        line-height:1.1852;
+        margin-top:2.3704em;
+        margin-bottom:1.1852em
+    }
+    #n h4{
+        font-size:22px;
+        line-height:1.4545;
+        margin-top:2.9091em;
+        margin-bottom:1.4545em
+    }
+    #n h5,#n h6{
+        font-size:19px;
+        line-height:1.2632;
+        margin-top:3.3684em;
+        margin-bottom:1.6842em
+    }
+    #w,#comments>h4{
+        font-size:27px;
+        line-height:1.1852
+    }
+}
+@media screen and (min-width:59.6875em){
+    body:before{
+        display:block;
+        height:100%;
+        min-height:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        width:29.4118%;
+        z-index:0
+    }
+    body{
+        margin:0 auto
+    }
+    #a{
+        float:left;
+        margin-right:-100%;
+        height:100%;
+        position:fixed;
+        overflow:auto;
+        width:20%
+    }
+    #f{
+        display:block;
+        margin:0;
+        padding:0
+    }
+    #k{
+        padding:8.3333% 0
+    }
+    #b{
+        display:block;
+        float:left;
+        margin-left:20%;
+        width:80%
+    }
+    body{
+        font-size:15px;
+        line-height:1.6
+    }
+    p,pre,hr,ul,ol,table{
+        margin-bottom:1.6em
+    }
+    blockquote{
+        font-size:18px;
+        line-height:1.6667;
+        margin-bottom:1.6667em;
+        margin-left:-1.3333em;
+        padding-left:1.1111em
+    }
+    pre{
+        line-height:1.2
+    }
+    button,input,select,textarea{
+        font-size:16px;
+        line-height:1.5
+    }
+    #h{
+        margin:0 20% 20%
+    }
+    #h a{
+        padding:.5em 0
+    }
+    #aa{
+        margin:8.333% 8.333% 0;line-height:48px
+    }
+    #aa #z{
+        min-height:3.2em
+    }
+    #aa #ac,#aa #ad{
+        height:48px;
+        padding:4px 0 0 0;
+        width:48px;font-size:48px
+    }
+    #c{
+        border-bottom:0;
+        margin:20% 0;
+        padding:0 20%
+    }
+    #d{
+        min-height:0;
+        padding:0
+    }
+    #e{
+        font-size:22px;
+        line-height:1.3636
+    }
+    #m,#v{
+        margin:0 8.3333%
+    }
+    #m{
+        padding-top:8.3333%
+    }
+    #m+#m,#v+#m{
+        margin-top:8.3333%
+    }
+    #o{
+        padding:0 10%
+    }
+    #p{
+        font-size:31px;
+        line-height:1.1613;
+        margin-bottom:1.1613em
+    }
+    #n{
+        padding:0 10% 10%
+    }
+    #n h1{
+        font-size:31px;
+        line-height:1.1613;
+        margin-top:1.5484em;
+        margin-bottom:.7742em
+    }
+    #n h2{
+        font-size:26px;
+        line-height:1.3846;
+        margin-top:1.8462em;
+        margin-bottom:.9231em
+    }
+    #n h3{
+        font-size:22px;
+        line-height:1.3636;
+        margin-top:2.1818em;
+        margin-bottom:1.0909em
+    }
+    #n h4{
+        font-size:18px;
+        line-height:1.3333;
+        margin-top:2.6667em;
+        margin-bottom:1.3333em
+    }
+    #n h5,#n h6{
+        font-size:15px;
+        line-height:1.2;
+        margin-top:3.2em;
+        margin-bottom:1.6em
+    }
+    #q{
+        padding:5% 10%
+    }
+    #v{
+        padding:4.1666% 8.3333%
+    }
+    #w,#comments>h4{
+        font-size:18px;
+        line-height:1.3333
+    }
+    #g{
+        float:left;
+        margin:0 0 0 26.7%;
+        padding:0;
+        width:66.669%
+    }
+    #l{
+        padding:5% 10%
+    }
+    #j{width:60%;margin:0 20% 0 20%}
+}
+@media screen and (min-width:68.75em){
+    body,button,input,select,textarea{
+        font-size:17px;
+        line-height:1.6471
+    }
+    p,pre,hr,ul,ol,table{
+        margin-bottom:1.6471em
+    }
+    blockquote{
+        font-size:20px;
+        line-height:1.75;
+        margin-bottom:1.75em;
+        margin-left:-1.05em;
+        padding-left:.85em
+    }
+    blockquote p{
+        margin-bottom:1.75em
+    }
+    pre{
+        line-height:1.2353
+    }
+    #aa #z{
+        min-height:3.2941em
+    }
+    #aa #ac,#aa #ad{
+        height:56px;
+        padding:5px 0 0 0;
+        width:56px;font-size:56px
+    }
+    #aa{
+        line-height:56px
+    }
+    #e{
+        font-size:24px;
+        line-height:1.1667
+    }
+    #p{
+        font-size:35px;
+        line-height:1.2;
+        margin-bottom:1.2em
+    }
+    #n h1{
+        font-size:35px;
+        line-height:1.2;
+        margin-top:1.6em;
+        margin-bottom:.8em
+    }
+    #n h2{
+        font-size:29px;
+        line-height:1.2069;
+        margin-top:1.931em;
+        margin-bottom:.9655em
+    }
+    #n h3{
+        font-size:24px;
+        line-height:1.1667;
+        margin-top:2.3333em;
+        margin-bottom:1.1667em
+    }
+    #n h4{
+        font-size:20px;
+        line-height:1.4;
+        margin-top:2.8em;
+        margin-bottom:1.4em
+    }
+    #n h5,#n h6{
+        font-size:17px;
+        line-height:1.2353;
+        margin-top:3.2941em;
+        margin-bottom:1.6471em
+    }
+    #w,#comments>h4{
+        font-size:24px;
+        line-height:1.1667
+    }
+}
+@media screen and (min-width:77.5em){
+    body,button,input,select,textarea{
+        font-size:19px;
+        line-height:1.6842
+    }
+    p,pre,hr,ul,ol,table{
+        margin-bottom:1.6842em
+    }
+    blockquote{
+        font-size:22px;
+        line-height:1.8182;
+        margin-bottom:1.8182em;
+        margin-left:-1.0909em;
+        padding-left:.9091em
+    }
+    blockquote p{
+        margin-bottom:1.8182em
+    }
+    pre{
+        line-height:1.2632
+    }
+    #aa #z{
+        min-height:3.3684em
+    }
+    #aa #ac,#aa #ad{
+        height:64px;
+        padding:6px 0 0 0;
+        width:64px;font-size:64px
+    }
+    #aa{
+        line-height:64px
+    }
+    #e{
+        font-size:27px;
+        line-height:1.1852
+    }
+    #p{
+        font-size:39px;
+        line-height:1.2308;
+        margin-bottom:1.2308em
+    }
+    #n h1{
+        font-size:39px;
+        line-height:1.2308;
+        margin-top:1.641em;
+        margin-bottom:.8205em
+    }
+    #n h2{
+        font-size:32px;
+        line-height:1.25;
+        margin-top:2em;
+        margin-bottom:1em
+    }
+    #n h3{
+        font-size:27px;
+        line-height:1.1852;
+        margin-top:2.3704em;
+        margin-bottom:1.1852em
+    }
+    #n h4{
+        font-size:22px;
+        line-height:1.4545;
+        margin-top:2.9091em;
+        margin-bottom:1.4545em
+    }
+    #n h5,#n h6{
+        font-size:19px;
+        line-height:1.2632;
+        margin-top:3.3684em;
+        margin-bottom:1.6842em
+    }
+    #w,#comments>h4{
+        font-size:27px;
+        line-height:1.1852
+    }
+}
+@media screen and (min-width:87.6875em){
+    body:before{
+        width:-webkit-calc(50% - 289px);
+        width:calc(50% - 289px)
+    }
+}
+@media print{
+    body{
+        background:0 0!important;
+        font-size:11.25pt
+    }
+    .navigation,.page-links,button,input,textarea,select{
+        display:none
+    }
+    #c,#g,#m,#q,#v{
+        background:0 0!important
+    }
+    body{
+        margin:0 7.6923%
+    }
+    #a{
+        position:relative!important
+    }
+    #o,#q,#d{
+        padding:0
+    }
+    #c{
+        padding:7.6923% 0
+    }
+    #m+#m{
+        margin-top:7.6923%
+    }
+    #n{
+        padding:0 0 7.6923%
+    }
+    #v{
+        padding:3.84615% 0
+    }
+    #g{
+        margin-top:7.6923%;
+        padding:3.84615% 0
+    }
+}
+code{
+    background:#111
+}
+img{
+    margin:5px;
+    border-radius:5px
+}
+#ii{
+    border:0!important
+}

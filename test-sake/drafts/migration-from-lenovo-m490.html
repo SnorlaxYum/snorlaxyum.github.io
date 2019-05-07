@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>	<title>Migration from Lenovo M490 - Terminal In A Simputer</title>
+	<meta charset=utf-8><link rel=canonical href=https://test.snorl.ax/drafts/migration-from-lenovo-m490.html>	<link href="https://test.snorl.ax/theme/css/style.css" rel=stylesheet><link href=https://test.snorl.ax/theme/css/inside.css rel=stylesheet>	<link href="https://test.snorl.ax/theme/images/icon.png" rel=icon>
+	<link href="https://test.snorl.ax/theme/images/icon-apple.png" rel=apple-touch-icon-precomposed>	<link href="https://test.snorl.ax/feeds/all.rss" rel=alternate title="Simputer RSS Feed" type=application/rss+xml><meta content=Lenovo name=tags><meta content=HP name=tags><meta content=Laptop name=tags><meta content=Arch Linux name=tags>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://test.snorl.ax/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
+	<meta name=twitter:title content="Migration from Lenovo M490">
+	<meta name=twitter:description content="to HP Probook 6460b, with the Debian changed to Arch Linux.">	<meta content="width=device-width" name=viewport>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://test.snorl.ax/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
+	<meta name=twitter:title content="Migration from Lenovo M490">
+	<meta name=twitter:description content="to HP Probook 6460b, with the Debian changed to Arch Linux."></head>
+
+<body>
+		<div id=a>
+			<header id=c>
+				<div id=d>
+					<h1 id=e><a href="https://test.snorl.ax/">Simputer</a></h1>
+				</div>
+			</header>
+			<div id=f>
+				<nav id=h>
+						<ul>							<li>
+								<a href=https://test.snorl.ax/>Home</a>
+									</li>									<li>
+										<a href="https://test.snorl.ax/browser/" >Browser</a>
+									</li>									<li id=i>
+										<a href="https://test.snorl.ax/terminal/" >Terminal</a>
+									</li></ul>
+				</nav>
+				<aside id=j>
+					<form action="https://test.snorl.ax/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+						<input placeholder="Search..."name=q id=tipue_search_input>
+					</form>
+				</aside></div>
+		</div>
+		<div id=b>
+				<main id=k><article id=m><header id=o><h2 id=p>Migration from Lenovo M490</h2></header><div id=n><p>Yep I just made a migration from Lenovo M490 to HP Probook 6460b. They r my old laptops, both of which r outdated today and useful enough for most of my work.  </p>
+<p>U might wonder why I choose HP 6460b over Lenovo M490, whose hardware is much newer than that of the former one:    </p>
+<ol>
+<li>
+<p>An HP 6460b has an incredibly comfortable keyboard for me to use, campared to Lenovo M490, which is a delight to me.  </p>
+</li>
+<li>
+<p>I care about battery life much, and an HP 6460b is capable of 200 Wh battery at most with the combination of HP BB09 and HP CC09 while a Lenovo M490 is capable of 67 Wh at most. Yep a Lenovo M490 is not able to run on dual battery like an HP 6460b. And the difference between i5-3230M and i5-2520M is not that much, determining that an HP 6460b could run much longer on battery at most.  </p>
+</li>
+<li>
+<p>An HP 6460b has a better screen, showing the same colour much more clearly.  </p>
+</li>
+</ol>
+<p>BTW, I ordered an HP BB09, an HP CC09 and a SAMSUNG 8GB RAM (DDR3L 1600MHz) for it.  </p>
+<p>And now I'm typing on the laptop suiting my needs running the Arch Linux on a SATA3 SSD.  </p>
+<p>I have to say, Arch Linux is so amazing.  </p>
+<p>The distribution has a self-contained wiki maintained by countless people, with AUR and official package source meeting most needs. I started to love it when I first asked a question in its forum, filled with lots of people willing to help u out. The question was answered and solved quickly.  </p>
+<p>My installation and configuration of the distribution was kind of easy. Most of my questions could find their way out in the wiki. So I'll state something u may need to notice.  </p>
+<h2>Be sure to make the partition bootable</h2>
+<p>Alternatively, u could use <code>cfdisk</code> to partition the disks instead of <code>fdisk</code>, making it much easier. Then make a partition bootable. If u seperately create one for <code>/boot</code>, u should make the partition for <code>/boot</code> bootable. Otherwise, make the partition for <code>/</code> bootable.  </p>
+<h2>Make use of Laptop Mode Tools</h2>
+<p>Yep, Laptop Mode Tools could save much power.  </p>
+<p>Here's the part I changed in my <code>/etc/laptop-mode/conf.d/cpufreq.conf</code>:  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>BATT_CPU_MAXFREQ=fastest</span>
+<span class="code-line">BATT_CPU_MINFREQ=slowest</span>
+<span class="code-line">BATT_CPU_GOVERNOR=powersave</span>
+<span class="code-line">BATT_CPU_IGNORE_NICE_LOAD=1</span>
+<span class="code-line">LM_AC_CPU_MAXFREQ=fastest</span>
+<span class="code-line">LM_AC_CPU_MINFREQ=slowest</span>
+<span class="code-line">LM_AC_CPU_GOVERNOR=performance</span>
+<span class="code-line">LM_AC_CPU_IGNORE_NICE_LOAD=1</span>
+<span class="code-line">NOLM_AC_CPU_MAXFREQ=fastest</span>
+<span class="code-line">NOLM_AC_CPU_MINFREQ=slowest</span>
+<span class="code-line">NOLM_AC_CPU_GOVERNOR=performance</span>
+<span class="code-line">NOLM_AC_CPU_IGNORE_NICE_LOAD=0</span>
+</pre></div>
+
+
+<p>Yep I added <code>intel_pstate=disable</code> to my kernel line. Thus the CPU frequency could be controlled. I have added the method to the <a href="https://wiki.archlinux.org/index.php/Laptop_Mode_Tools#CPU_frequency" target="_blank">wiki</a>.  </p>
+<p>(Someone may wonder how to add this thing to his kernel line. Refer to <a href="https://wiki.archlinux.org/index.php/Kernel_parameters" target="_blank">this</a>)  </p>
+<p><strong>2017-07-19</strong>: I just leaped back to intel_pstate, which is more power-hungry, but meanwhile, much more productive (I noticed that while watching a 4K Video). So if u care more about productivity, go with the default <code>intel_pstate</code>.  </p>
+<hr>
+<p>Now Arch Linux is running smoothly on my HP 6460b. I'm still using openbox and I recommend NetworkManager over Wicd for Network. I wonder how long the laptop could help me produce.  </p>
+<p><strong>2017-07-19</strong>: BTW, I just made a <a href="https://wiki.archlinux.org/index.php/Cursor_themes#XDG_specification" target="_blank">contribution</a> to the Wiki! If u use openbox and want to try a different cursor theme, try the method!</p></div><footer id=q><b>Created:&nbsp;</b><time datetime="2017-07-05T19:37:00+02:00">July 05, 2017</time><span id=y>•</span><b>Updated:&nbsp;</b><time datetime="2017-07-19T02:35:00+02:00">July 19, 2017</time><span id=y>•</span>In a <a href="https://test.snorl.ax/terminal/"rel="category tag"><b>Terminal</b></a> Session<span id=y>•</span><b>Tags:&nbsp;</b><a href="https://test.snorl.ax/tags/lenovo/"rel=tag>Lenovo</a>,&nbsp;<a href="https://test.snorl.ax/tags/hp/"rel=tag>HP</a>,&nbsp;<a href="https://test.snorl.ax/tags/laptop/"rel=tag>Laptop</a>,&nbsp;<a href="https://test.snorl.ax/tags/arch-linux/"rel=tag>Arch Linux</a></footer></article>
+	<article id=m><div id=n><section id="comments"data-title="Migration from Lenovo M490"data-isso-id="/drafts/migration-from-lenovo-m490.html"></section></div></article>
+</main>
+		</div>
+		<footer id=g>
+			<div id=l>Simputer &#169; 2016 - 2019 (<a href="/archives/">Archives</a>) • Licensed under <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>Made using <a href="http://getpelican.com/" target="_blank">Pelican</a> • Design from <a href="https://wordpress.org/themes/twentyfifteen/" target="_blank">TwentyFifteen</a>
+			</div>
+		</footer>
+	<script data-isso="https://isso.snorl.ax/"data-isso-gravatar="true"data-isso-avatar="false"data-isso-reply-notifications="true"data-isso-reply-to-self="true"data-isso-css="false"src="https://test.snorl.ax/theme/js/embed.min.js"data-isso-lang=en></script>

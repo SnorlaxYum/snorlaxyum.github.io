@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>	<title>  Search Result - Simputer
+</title>
+	<meta charset=utf-8>	<link href="https://test.snorl.ax/theme/css/style.css" rel=stylesheet><link href="https://test.snorl.ax/theme/css/search.css"rel=stylesheet>	<link href="https://test.snorl.ax/theme/images/icon.png" rel=icon>
+	<link href="https://test.snorl.ax/theme/images/icon-apple.png" rel=apple-touch-icon-precomposed>	<link href="https://test.snorl.ax/feeds/all.rss" rel=alternate title="Simputer RSS Feed" type=application/rss+xml>	<meta content="width=device-width" name=viewport></head>
+
+<body>
+		<div id=a>
+			<header id=c>
+				<div id=d>
+					<h1 id=e><a href="https://test.snorl.ax/">Simputer</a></h1>
+				</div>
+			</header>
+			<div id=f>
+				<nav id=h>
+						<ul>							<li>
+								<a href=https://test.snorl.ax/>Home</a>
+									</li>									<li>
+										<a href="https://test.snorl.ax/browser/" >Browser</a>
+									</li>									<li>
+										<a href="https://test.snorl.ax/terminal/" >Terminal</a>
+									</li></ul>
+				</nav>
+				<aside id=j>
+					<form action="https://test.snorl.ax/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+						<input placeholder="Search..."name=q id=tipue_search_input>
+					</form>
+				</aside></div>
+		</div>
+		<div id=b>
+				<main id=k><article id=m><div id=n>
+    <div id="tipue_search_content"></div></div></article>
+</main>
+		</div>
+		<footer id=g>
+			<div id=l>Simputer &#169; 2016 - 2019 (<a href="/archives/">Archives</a>) • Licensed under <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>Made using <a href="http://getpelican.com/" target="_blank">Pelican</a> • Design from <a href="https://wordpress.org/themes/twentyfifteen/" target="_blank">TwentyFifteen</a>
+			</div>
+		</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_content.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
+  <script src="https://test.snorl.ax/theme/js/tipuesearch.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+          'mode' : 'json',
+          'show': 10,
+          'newWindow': false,
+          'contentLocation': 'https://test.snorl.ax/tipuesearch_content.json'
+      });
+    });
+  </script>
