@@ -1,155 +1,0 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
-<head>	<title>About saving power in Debian - Terminal In A Simputer</title>
-	<meta charset=utf-8><link rel=canonical href=https://static.snorl.ax/test-sake/drafts/saving-power-in-debian.html>	<link href="https://static.snorl.ax/test-sake/theme/css/style.css" rel=stylesheet><link href=https://static.snorl.ax/test-sake/theme/css/inside.css rel=stylesheet>	<link href="https://static.snorl.ax/test-sake/theme/images/icon.png" rel=icon>
-	<link href="https://static.snorl.ax/test-sake/theme/images/icon-apple.png" rel=apple-touch-icon-precomposed>	<link href="https://static.snorl.ax/test-sake/feeds/all.rss" rel=alternate title="Simputer RSS Feed" type=application/rss+xml><meta content=Debian name=tags><meta content=Sid name=tags><meta content=Unstable name=tags><meta content=powersave name=tags>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://static.snorl.ax/test-sake/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
-	<meta name=twitter:title content="About saving power in Debian">
-	<meta name=twitter:description content="Debian with Lxde and Openbox rocks!">	<meta content="width=device-width" name=viewport>	<meta name=twitter:card content=summary>	<meta name=twitter:image content=https://static.snorl.ax/test-sake/theme/images/usual-twitter.png>	<meta name=twitter:site content=@Snorl_ax>
-	<meta name=twitter:title content="About saving power in Debian">
-	<meta name=twitter:description content="Debian with Lxde and Openbox rocks!"></head>
-
-<body>
-		<div id=a>
-			<header id=c>
-				<div id=d>
-					<h1 id=e><a href="https://static.snorl.ax/test-sake/">Simputer</a></h1>
-				</div>
-			</header>
-			<div id=f>
-				<nav id=h>
-						<ul>							<li>
-								<a href=https://static.snorl.ax/test-sake/>Home</a>
-									</li>									<li>
-										<a href="https://static.snorl.ax/test-sake/browser/" >Browser</a>
-									</li>									<li id=i>
-										<a href="https://static.snorl.ax/test-sake/terminal/" >Terminal</a>
-									</li></ul>
-				</nav>
-				<aside id=j>
-					<form action="https://static.snorl.ax/test-sake/search.html" onsubmit="return validateForm(this.elements['q'].value);">
-						<input placeholder="Search..."name=q id=tipue_search_input>
-					</form>
-				</aside></div>
-		</div>
-		<div id=b>
-				<main id=k><article id=m><header id=o><h2 id=p>About saving power in Debian</h2></header><div id=n><p>Recently I reinstalled Debian with the rc (Click <a href="https://www.debian.org/devel/debian-installer/" target="_blank">here</a> if u r interested) to obtain a fresh Debian Testing system and updated it to sid.<br> Debian Sid is also called Debian Unstable, but don't be too scared to try it out, it's not that dangerous. </p><p>Leap to the topic. Generally, when it comes to Linux, the open-source thing is often famous for making a laptop last much shorter than Windows system due to lack of drive support by default.<br> Actually, with some optimization, Linux systems like Debian could really extend the battery life. </p><p>Take my Lenovo m490 for example, it could last about 7 hours on battery if I keep slightly using it without watching videos and listening to some music. </p><h2>Obtain a better battery</h2><p>Battery really matters, I bought one 9-cell battery to replace the original 6-cell battery on M490 and found out the new one is 1.5~2 times the life of the original one in the same condition. </p><p>If u wanna buy a laptop and cares about the battery life, u should really care about the number of the cells in battery. </p><h2>Use Intel Graphical Card</h2><p>Unfortunately, Lenovo M490 is a Nvidia Optimus Laptop, bringing <strong>a world of pain</strong> to Linux users: </p><ol><li>Both GPUs are on and active. </li><li>The HDMI output is “hardwired” to the discrete GPU. </li><li>The VGA output is “hardwired” to the internal GPU. </li><li>Only the VGA output works by default. </li><li>You can work with only one output at a time. </li><li>You can only toggle between outputs using an external project such as Bumblebee. </li></ol><p>If u happen to be a Nvidia Optimus user and wanna solve the problem, install and configure as below: </p><ol><li><p>Install Nvidia Proprietary Driver. (From <a href="https://wiki.debian.org/NvidiaGraphicsDrivers" target="_blank">Debian Wiki</a>) </p><ol><li><p>Install nvidia-detect if u haven't installed it.</p><div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install nvidia-detect</span>
-</pre></div></li><li><p>Detect.</p><div class="highlight"><pre><span class="code-line"><span></span>nvidia-detect</span>
-</pre></div></li><li><p>Watch what it returned and install the recommended package. For example, when it returns this: </p><div class="highlight"><pre><span class="code-line"><span></span>Detected NVIDIA GPUs:</span>
-<span class="code-line">02:00.0 VGA compatible controller [0300]: NVIDIA Corporation GF108 [GeForce GT 430] [10de:0de1] (rev a1)</span>
-<span class="code-line">Your card is supported by the default drivers.</span>
-<span class="code-line">It is recommended to install the</span>
-<span class="code-line">    nvidia-driver</span>
-<span class="code-line">package.</span>
-</pre></div><p>u should install the <strong>nvidia-driver</strong> package.</p><div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install nvidia-driver</span>
-</pre></div></li></ol></li><li><p>Find the version for ur driver <a href="https://wiki.debian.org/NvidiaGraphicsDrivers#Drivers" target="_blank">here</a>.</p></li><li>Follow the installation <a href="https://wiki.debian.org/NvidiaGraphicsDrivers#Installation" target="_blank">here</a> to install the Nvidia Driver things. </li><li><p>Follow the installation <a href="https://wiki.debian.org/Bumblebee#Installation" target="_blank">here</a> to install Bumblebee. I did the things below:<br> Install the free nouveau driver.</p><div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install bumblebee primus</span>
-</pre></div></li><li><p>Permanently switching off the discrete card (From <a href="https://blog.10ne.org/2014/01/23/disable-the-optimus-discrete-graphics-gpu-in-ubuntu-using-bbswitch/" target="_blank">Noam Tenne's blog</a>)</p><ol><li><p>Check the files and directories in <strong>/etc/modprobe.d/</strong> .</p><div class="highlight"><pre><span class="code-line"><span></span>ls /etc/modprobe.d/</span>
-</pre></div></li><li><p>Find the file whose name includes <strong>blacklist</strong>, for me it's <strong>nvidia-blacklists-nouveau.conf</strong> . So edit it. </p><div class="highlight"><pre><span class="code-line"><span></span>sudo nano /etc/modprobe.d/nvidia-blacklists-nouveau.conf</span>
-</pre></div><p>Append the following lines to it (there's already "blacklist nouveau" in the file, so it's no use appending it again): </p><div class="highlight"><pre><span class="code-line"><span></span># Blacklist the original nvidia module</span>
-<span class="code-line">blacklist nvidia</span>
-</pre></div></li><li><p>Edit <strong>/etc/modules</strong> and append the following lines to it (like what I did above): </p><div class="highlight"><pre><span class="code-line"><span></span># Switch off discrete GPU</span>
-<span class="code-line">bbswitch load_state=0</span>
-</pre></div></li><li><p>Apply the changes. </p><div class="highlight"><pre><span class="code-line"><span></span>sudo update-initramfs -u</span>
-</pre></div></li></ol></li></ol><h2>Powertop</h2><p>The <strong>autotune</strong> works perfectly. (From <a href="http://unix.stackexchange.com/questions/65948/how-do-i-make-powertops-suggestions-permanent" target="_blank">This</a>) </p><ol><li><p>Install powertop.</p><div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install powertop</span>
-</pre></div></li><li><p>Make the following command a startup script [I added it to my autostart file of openbox]. </p><div class="highlight"><pre><span class="code-line"><span></span>powertop --auto-tune</span>
-</pre></div></li></ol><h2>Laptop mode tools with cpufrequtils</h2><p>Thank <a href="http://askubuntu.com/questions/613498/automatic-switching-between-performance-and-powersave-mode-on-plugging-in-out-th" target="_blank">AskUbuntu</a>, <a href="http://unix.stackexchange.com/questions/182696/how-to-get-current-cpupower-governor" target="_blank">StackExchange</a> and <a href="https://wiki.debian.org/HowTo/CpuFrequencyScaling" target="_blank">Debian Wiki</a></p><ol><li><p>Install Laptop mode tools </p><div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install laptop-mode-tools</span>
-</pre></div></li><li><p>Run the tools and configure.</p><div class="highlight"><pre><span class="code-line"><span></span>sudo lmt-config-gui</span>
-</pre></div><p>Be sure to turn on "Enable module cpufreq"</p></li><li><p>Install cpufrequtils package.</p><div class="highlight"><pre><span class="code-line"><span></span>sudo apt-get install cpufrequtils</span>
-</pre></div></li><li><p>See the information of the CPU.</p><div class="highlight"><pre><span class="code-line"><span></span>cpufreq-info</span>
-</pre></div><p>There r 4 drivers named "intel_pstate", so edit <strong>/etc/default/grub</strong>:</p><div class="highlight"><pre><span class="code-line"><span></span>sudo nano /etc/default/grub</span>
-</pre></div><p>Change the <strong>GRUB_CMDLINE_LINUX_DEFAULT</strong> line to the following: </p><div class="highlight"><pre><span class="code-line"><span></span>GRUB_CMDLINE_LINUX_DEFAULT="ipv6.disable=1 intel_pstate=disable crashkernel=384M-:128M"</span>
-</pre></div><p>Then run: </p><div class="highlight"><pre><span class="code-line"><span></span>sudo update-grub</span>
-</pre></div></li><li><p>Reboot, and get the current CPU governor: </p><div class="highlight"><pre><span class="code-line"><span></span>cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor</span>
-</pre></div><p>When the laptop is unplugged, it should return <strong>powersave</strong>.<br> Run the command <strong>cpufreq-info</strong> again, it'll return something like this, meaning the process has just succeeded: </p><div class="highlight"><pre><span class="code-line"><span></span>cpufrequtils 008: cpufreq-info (C) Dominik Brodowski 2004-2009</span>
-<span class="code-line">Report errors and bugs to cpufreq@vger.kernel.org, please.</span>
-<span class="code-line">analyzing CPU 0:</span>
-<span class="code-line">  driver: acpi-cpufreq</span>
-<span class="code-line">  CPUs which run at the same hardware frequency: 0</span>
-<span class="code-line">  CPUs which need to have their frequency coordinated by software: 0</span>
-<span class="code-line">  maximum transition latency: 10.0 us.</span>
-<span class="code-line">  hardware limits: 1.20 GHz - 2.60 GHz</span>
-<span class="code-line">  available frequency steps: 2.60 GHz, 2.60 GHz, 2.50 GHz, 2.40 GHz, 2.30 GHz, 2.20 GHz, 2.10 GHz, 2.00 GHz, 1.90 GHz, 1.80 GHz, 1.70 GHz, 1.60 GHz, 1.50 GHz, 1.40 GHz, 1.30 GHz, 1.20 GHz</span>
-<span class="code-line">  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil</span>
-<span class="code-line">  current policy: frequency should be within 1.20 GHz and 2.60 GHz.</span>
-<span class="code-line">                  The governor "powersave" may decide which speed to use</span>
-<span class="code-line">                  within this range.</span>
-<span class="code-line">  current CPU frequency is 1.20 GHz.</span>
-<span class="code-line">  cpufreq stats: 2.60 GHz:0.03%, 2.60 GHz:0.00%, 2.50 GHz:0.00%, 2.40 GHz:0.00%, 2.30 GHz:0.00%, 2.20 GHz:0.00%, 2.10 GHz:0.00%, 2.00 GHz:0.00%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:99.97%  (7958)</span>
-<span class="code-line">analyzing CPU 1:</span>
-<span class="code-line">  driver: acpi-cpufreq</span>
-<span class="code-line">  CPUs which run at the same hardware frequency: 1</span>
-<span class="code-line">  CPUs which need to have their frequency coordinated by software: 1</span>
-<span class="code-line">  maximum transition latency: 10.0 us.</span>
-<span class="code-line">  hardware limits: 1.20 GHz - 2.60 GHz</span>
-<span class="code-line">  available frequency steps: 2.60 GHz, 2.60 GHz, 2.50 GHz, 2.40 GHz, 2.30 GHz, 2.20 GHz, 2.10 GHz, 2.00 GHz, 1.90 GHz, 1.80 GHz, 1.70 GHz, 1.60 GHz, 1.50 GHz, 1.40 GHz, 1.30 GHz, 1.20 GHz</span>
-<span class="code-line">  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil</span>
-<span class="code-line">  current policy: frequency should be within 1.20 GHz and 2.60 GHz.</span>
-<span class="code-line">                  The governor "powersave" may decide which speed to use</span>
-<span class="code-line">                  within this range.</span>
-<span class="code-line">  current CPU frequency is 1.20 GHz.</span>
-<span class="code-line">  cpufreq stats: 2.60 GHz:0.02%, 2.60 GHz:0.00%, 2.50 GHz:0.00%, 2.40 GHz:0.00%, 2.30 GHz:0.00%, 2.20 GHz:0.00%, 2.10 GHz:0.00%, 2.00 GHz:0.00%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:99.98%  (2660)</span>
-<span class="code-line">analyzing CPU 2:</span>
-<span class="code-line">  driver: acpi-cpufreq</span>
-<span class="code-line">  CPUs which run at the same hardware frequency: 2</span>
-<span class="code-line">  CPUs which need to have their frequency coordinated by software: 2</span>
-<span class="code-line">  maximum transition latency: 10.0 us.</span>
-<span class="code-line">  hardware limits: 1.20 GHz - 2.60 GHz</span>
-<span class="code-line">  available frequency steps: 2.60 GHz, 2.60 GHz, 2.50 GHz, 2.40 GHz, 2.30 GHz, 2.20 GHz, 2.10 GHz, 2.00 GHz, 1.90 GHz, 1.80 GHz, 1.70 GHz, 1.60 GHz, 1.50 GHz, 1.40 GHz, 1.30 GHz, 1.20 GHz</span>
-<span class="code-line">  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil</span>
-<span class="code-line">  current policy: frequency should be within 1.20 GHz and 2.60 GHz.</span>
-<span class="code-line">                  The governor "powersave" may decide which speed to use</span>
-<span class="code-line">                  within this range.</span>
-<span class="code-line">  current CPU frequency is 1.20 GHz.</span>
-<span class="code-line">  cpufreq stats: 2.60 GHz:0.03%, 2.60 GHz:0.00%, 2.50 GHz:0.00%, 2.40 GHz:0.00%, 2.30 GHz:0.00%, 2.20 GHz:0.00%, 2.10 GHz:0.00%, 2.00 GHz:0.00%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:99.97%  (5310)</span>
-<span class="code-line">analyzing CPU 3:</span>
-<span class="code-line">  driver: acpi-cpufreq</span>
-<span class="code-line">  CPUs which run at the same hardware frequency: 3</span>
-<span class="code-line">  CPUs which need to have their frequency coordinated by software: 3</span>
-<span class="code-line">  maximum transition latency: 10.0 us.</span>
-<span class="code-line">  hardware limits: 1.20 GHz - 2.60 GHz</span>
-<span class="code-line">  available frequency steps: 2.60 GHz, 2.60 GHz, 2.50 GHz, 2.40 GHz, 2.30 GHz, 2.20 GHz, 2.10 GHz, 2.00 GHz, 1.90 GHz, 1.80 GHz, 1.70 GHz, 1.60 GHz, 1.50 GHz, 1.40 GHz, 1.30 GHz, 1.20 GHz</span>
-<span class="code-line">  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil</span>
-<span class="code-line">  current policy: frequency should be within 1.20 GHz and 2.60 GHz.</span>
-<span class="code-line">                  The governor "powersave" may decide which speed to use</span>
-<span class="code-line">                  within this range.</span>
-<span class="code-line">  current CPU frequency is 1.20 GHz.</span>
-<span class="code-line">  cpufreq stats: 2.60 GHz:0.03%, 2.60 GHz:0.00%, 2.50 GHz:0.00%, 2.40 GHz:0.00%, 2.30 GHz:0.00%, 2.20 GHz:0.00%, 2.10 GHz:0.00%, 2.00 GHz:0.00%, 1.90 GHz:0.00%, 1.80 GHz:0.00%, 1.70 GHz:0.00%, 1.60 GHz:0.00%, 1.50 GHz:0.00%, 1.40 GHz:0.00%, 1.30 GHz:0.00%, 1.20 GHz:99.97%  (2654)</span>
-</pre></div></li></ol><h2>Use a lightweight desktop or windows manager</h2><p>I just leaped from XFCE to LXDE for more battery life, then from LXDE to its windows manager, openbox. </p><p>Now I use LXDE when the laptop is plugged and Openbox when it is unplgged. All startup script for longer life is added to the autostart file of openbox. </p><p><a href="//static.snorl.ax/uploads/2017/04/my-openbox.png"><img src="//static.snorl.ax/uploads/2017/04/my-openbox-150x150.png"></a></p><p>BTW, Lxde and Openbox doesn't have power manager by default, so I installed acpid(Thank <a href="http://openbox.org/wiki/Power_management" target="_blank">Openbox Wiki</a> for help) to configure the action when the Laptop is closed. It's easy u should refer to <a href="http://www.thinkwiki.org/wiki/How_to_configure_acpid#Example:_go_to_sleep_on_lid_close" target="_blank">this</a> to understand. </p><p>My laptop suspends when its lid is closed. My acpid scripts for it: </p><ol><li><p><code>/etc/acpi/events/lm_lid</code> (It exists by default and don't need much configuration) </p><div class="highlight"><pre><span class="code-line"><span></span>event=button/lid</span>
-<span class="code-line">action=/etc/acpi/actions/lm_lid.sh %e</span>
-</pre></div></li><li><p><code>/etc/acpi/actions/lm_lid.sh</code> (It exists by default too) </p><p></p><pre><span class="code-line">#! /bin/sh<br><br>sudo pm-suspend</pre><p></p></li></ol><p>To make your changes take effect after adding or modifying the events files you must do a <code>kill -SIGHUP `pidof acpid`</code></p><p>If u like, u could try something like i3 for longer battery life.</p><h2>Brightness</h2><p>By default, there's no GUI for brightness in LXDE, I tried the following command and it worked: </p><div class="highlight"><pre><span class="code-line"><span></span>echo 5 | sudo tee /sys/class/backlight/intel_backlight/brightness</span>
-</pre></div><p>So adjust the number and do it the way u like! (From <a href="https://ubuntuforums.org/showthread.php?t=1827810" target="_blank">AskUbuntu</a>)</p><h2>Disable touchpad</h2><p>Thank Arch Linux Wiki (I couldn't find the link, but thanks) for inspiration.</p><ol><li><p>List ur input devices using the following command (<code>sudo apt-get install xinput</code> if it's not been installed).</p><div class="highlight"><pre><span class="code-line">xinput</pre></div><p>For me, it returns: </p><div class="highlight"><pre><span class="code-line">⎡ Virtual core pointer                    	id=2	[master pointer  (3)]</span>
-<span class="code-line">⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]</span>
-<span class="code-line">⎜   ↳ MOSART Semi. 2.4G Keyboard Mouse        	id=11	[slave  pointer  (2)]</span>
-<span class="code-line">⎜   ↳ SynPS/2 Synaptics TouchPad              	id=14	[slave  pointer  (2)]</span>
-<span class="code-line">⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]</span>
-<span class="code-line">    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ Power Button                            	id=6	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ Video Bus                               	id=7	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ Video Bus                               	id=8	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ Sleep Button                            	id=9	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ AT Translated Set 2 keyboard            	id=13	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ ThinkPad Extra Buttons                  	id=15	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ MOSART Semi. 2.4G Keyboard Mouse        	id=16	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ MOSART Semi. 2.4G Keyboard Mouse        	id=10	[slave  keyboard (3)]</span>
-<span class="code-line">    ↳ Integrated Camera                       	id=12	[slave  keyboard (3)]</span>
-</pre></div></li><li><p>Disable the touchpad using the following command.</p><pre><span class="code-line">xinput --disable "SynPS/2 Synaptics TouchPad"</pre><p>If it takes effect, make it a startup script (I added it to my autostart file for mouse version of the openbox).</p></li></ol><h2>Make a Mouse Version for Openbox</h2><p>Sometimes when I forget to bring a mouse with me outside, I will need the touchpad to do something for the laptop, so there's always a need to have a version for mouse with touchpad disabled and a version for touchpad.</p><p>So I made a version for mouse. (Thank <a href="https://wiki.ubuntu.com/CustomXSession#How_to_create_a_X_session_script" target="_blank">Ubuntu Wiki</a> for the inspiration)</p><ol><li><p>Make a desktop for the version.</p><pre><span class="code-line">sudo nano /usr/share/xsessions/openbox1.desktop</pre></li><li><p>In the new file, type the following things.</p><pre><span class="code-line">[Desktop Entry]</span>
-<span class="code-line">Name=Openbox (Mouse Session)</span>
-<span class="code-line">Comment=Log in using the Openbox window manager (without a session manager)</span>
-<span class="code-line">Exec=/home/yum/openbox-mouse-session</span>
-<span class="code-line">Icon=openbox</span>
-<span class="code-line">Type=Application</span>
-</pre></li><li><p>This means I will have to make a file for it. Now that I've been logged in as the user <b>yum</b> and the Terminal session is now in my own home directory <b>/home/yum</b>, I just have to make a file for it and edit the file: </p><pre><span class="code-line">nano openbox-mouse-session</pre></li><li><p>Put the following code in it and save the file:</p><pre><span class="code-line">#!/usr/bin/env bash</span>
-<span class="code-line"></span>
-<span class="code-line">xinput --disable "SynPS/2 Synaptics TouchPad" &</span>
-<span class="code-line"></span>
-<span class="code-line">exec /usr/bin/openbox-session</span>
-</pre></li><li><p>Make it accessible and executable to all users.</p><pre><span class="code-line">chmod 777 openbox-mouse-session</pre></li></ol>Now u could log out and log into the newly created session. If u r not using openbox u could replace the <b>/usr/bin/openbox-session</b> with ur desktop/windows manager's X Session command, then replace <b>Openbox (Mouse Session)</b> with ur desired name.</p><p>Someday when the laptop becomes useless, I will consider making a leap to a laptop with long battery life.</p>
-</div><footer id=q><b>Created:&nbsp;</b><time datetime="2017-03-31T14:00:00+02:00">March 31, 2017</time><span id=y>•</span><b>Updated:&nbsp;</b><time datetime="2017-05-20T16:00:00+02:00">May 20, 2017</time><span id=y>•</span>In a <a href="https://static.snorl.ax/test-sake/terminal/"rel="category tag"><b>Terminal</b></a> Session<span id=y>•</span><b>Tags:&nbsp;</b><a href="https://static.snorl.ax/test-sake/tags/debian/"rel=tag>Debian</a>,&nbsp;<a href="https://static.snorl.ax/test-sake/tags/sid/"rel=tag>Sid</a>,&nbsp;<a href="https://static.snorl.ax/test-sake/tags/unstable/"rel=tag>Unstable</a>,&nbsp;<a href="https://static.snorl.ax/test-sake/tags/powersave/"rel=tag>powersave</a></footer></article>
-	<article id=m><div id=n><section id="comments"data-title="About saving power in Debian"data-isso-id="/drafts/saving-power-in-debian.html"></section></div></article>
-</main>
-		</div>
-		<footer id=g>
-			<div id=l>Simputer &#169; 2016 - 2019 (<a href="/archives/">Archives</a>) • Licensed under <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>Made using <a href="http://getpelican.com/" target="_blank">Pelican</a> • Design from <a href="https://wordpress.org/themes/twentyfifteen/" target="_blank">TwentyFifteen</a>
-			</div>
-		</footer>
-	<script data-isso="https://isso.snorl.ax/"data-isso-gravatar="true"data-isso-avatar="false"data-isso-reply-notifications="true"data-isso-reply-to-self="true"data-isso-css="false"src="https://static.snorl.ax/test-sake/theme/js/embed.min.js"data-isso-lang=en></script>
