@@ -4,630 +4,630 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://test.snorl.ax/</loc>
-<lastmod>2019-05-07T09:55:05-00:00</lastmod>
+<loc>https://static.snorl.ax/test-sake/</loc>
+<lastmod>2019-05-07T11:07:24-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/terminal/2019/04/15/resolving-conflicts-in-git/</loc>
+<loc>https://static.snorl.ax/test-sake/terminal/2019/04/15/resolving-conflicts-in-git/</loc>
 <lastmod>2019-04-15T20:46:32+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/terminal/2018/12/27/running-email-service-on-my-own-server/</loc>
+<loc>https://static.snorl.ax/test-sake/terminal/2018/12/27/running-email-service-on-my-own-server/</loc>
 <lastmod>2019-01-25T21:14:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2018/12/08/cold-winter-in-2018/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2018/12/08/cold-winter-in-2018/</loc>
 <lastmod>2018-12-09T20:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2018/05/04/waiting-for-pray-for-the-wicked/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2018/05/04/waiting-for-pray-for-the-wicked/</loc>
 <lastmod>2018-05-04T00:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2018/05/02/mania-in-shanghai/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2018/05/02/mania-in-shanghai/</loc>
 <lastmod>2018-05-02T23:02:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2018/01/23/a-mania-you-cant-miss/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2018/01/23/a-mania-you-cant-miss/</loc>
 <lastmod>2018-01-23T02:02:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2017/05/22/start-to-enjoy-music/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2017/05/22/start-to-enjoy-music/</loc>
 <lastmod>2017-05-22T17:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/terminal/2016/12/08/hosted-by-gitlab/</loc>
+<loc>https://static.snorl.ax/test-sake/terminal/2016/12/08/hosted-by-gitlab/</loc>
 <lastmod>2019-05-06T16:51:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/terminal/2016/07/12/start-to-use-isso/</loc>
+<loc>https://static.snorl.ax/test-sake/terminal/2016/07/12/start-to-use-isso/</loc>
 <lastmod>2018-12-27T18:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/terminal/2016/07/06/back-to-nginx/</loc>
+<loc>https://static.snorl.ax/test-sake/terminal/2016/07/06/back-to-nginx/</loc>
 <lastmod>2016-07-06T22:30:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2016/07/04/enjoy-the-life/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2016/07/04/enjoy-the-life/</loc>
 <lastmod>2017-04-28T15:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2016/06/04/panic-at-the-disco-bohemian-rhapsody/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2016/06/04/panic-at-the-disco-bohemian-rhapsody/</loc>
 <lastmod>2016-06-04T21:22:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/terminal/2016/05/27/make-full-use-of-cloudflare/</loc>
+<loc>https://static.snorl.ax/test-sake/terminal/2016/05/27/make-full-use-of-cloudflare/</loc>
 <lastmod>2018-12-27T12:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2016/05/22/linda-perry-in-flight/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2016/05/22/linda-perry-in-flight/</loc>
 <lastmod>2016-05-22T02:55:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/2016/05/13/12-ways-to-eat-clean-all-season-long/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/2016/05/13/12-ways-to-eat-clean-all-season-long/</loc>
 <lastmod>2016-05-13T00:56:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/browser/</loc>
+<loc>https://static.snorl.ax/test-sake/browser/</loc>
 <lastmod>2018-12-09T20:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/terminal/</loc>
+<loc>https://static.snorl.ax/test-sake/terminal/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/git/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/git/</loc>
 <lastmod>2019-04-15T20:46:32+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/conflicts/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/conflicts/</loc>
 <lastmod>2019-04-15T20:46:32+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/email/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/email/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/postfix/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/postfix/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/dovecot/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/dovecot/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/saslauthd/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/saslauthd/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/debian/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/debian/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/imap/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/imap/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/smtp/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/smtp/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/sendgrid/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/sendgrid/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/amazon-ses/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/amazon-ses/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/dkim/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/dkim/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/spf/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/spf/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/dmarc/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/dmarc/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/mailutils/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/mailutils/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/spamassassin/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/spamassassin/</loc>
 <lastmod>2019-01-25T21:14:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/winter/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/winter/</loc>
 <lastmod>2018-12-09T20:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/snow/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/snow/</loc>
 <lastmod>2018-12-09T20:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/hangzhou/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/hangzhou/</loc>
 <lastmod>2018-12-09T20:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/panic-at-the-disco/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/panic-at-the-disco/</loc>
 <lastmod>2018-05-04T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/pray-for-the-wicked/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/pray-for-the-wicked/</loc>
 <lastmod>2018-05-04T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/fall-out-boy/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/fall-out-boy/</loc>
 <lastmod>2018-05-02T23:02:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/m-a-n-i-a/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/m-a-n-i-a/</loc>
 <lastmod>2018-05-02T23:02:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/tour/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/tour/</loc>
 <lastmod>2018-05-02T23:02:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/shanghai/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/shanghai/</loc>
 <lastmod>2018-05-02T23:02:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/katy-perry/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/katy-perry/</loc>
 <lastmod>2017-05-22T17:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/one-of-the-boys/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/one-of-the-boys/</loc>
 <lastmod>2017-05-22T17:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/kelly-clarkson/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/kelly-clarkson/</loc>
 <lastmod>2017-05-22T17:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/relax/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/relax/</loc>
 <lastmod>2017-05-22T17:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/lost-rivers/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/lost-rivers/</loc>
 <lastmod>2017-05-22T17:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/keycdn/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/keycdn/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/gitlab/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/gitlab/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/github/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/github/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/netlify/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/netlify/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/speed/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/speed/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/cloudflare/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/cloudflare/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/firebase/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/firebase/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/cdn/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/cdn/</loc>
 <lastmod>2019-05-06T16:51:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/isso/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/isso/</loc>
 <lastmod>2018-12-27T18:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/lnmp/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/lnmp/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/lamp/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/lamp/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/nginx/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/nginx/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/apache/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/apache/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/php/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/php/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/mysql/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/mysql/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/linux/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/linux/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/404/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/404/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/403/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/403/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/custom-error-page/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/custom-error-page/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/301/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/301/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/redirect/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/redirect/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/avatar/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/avatar/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/snorlax/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/snorlax/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/markdown/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/markdown/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/html/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/html/</loc>
 <lastmod>2018-12-27T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/code/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/code/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/pre/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/pre/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/oneinstack/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/oneinstack/</loc>
 <lastmod>2016-07-06T22:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/death-of-a-bachelor/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/death-of-a-bachelor/</loc>
 <lastmod>2017-04-28T15:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/bbc-radio-1-big-weekend/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/bbc-radio-1-big-weekend/</loc>
 <lastmod>2016-06-04T21:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/bohemian-rhapsody/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/bohemian-rhapsody/</loc>
 <lastmod>2016-06-04T21:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/live/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/live/</loc>
 <lastmod>2016-06-04T21:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/youtube/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/youtube/</loc>
 <lastmod>2016-06-04T21:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/cache/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/cache/</loc>
 <lastmod>2018-12-27T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/site/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/site/</loc>
 <lastmod>2018-12-27T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/in-the-flight/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/in-the-flight/</loc>
 <lastmod>2016-05-22T02:55:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/linda-perry/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/linda-perry/</loc>
 <lastmod>2016-05-22T02:55:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/spotify/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/spotify/</loc>
 <lastmod>2016-05-22T02:55:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/bodybuilding/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/bodybuilding/</loc>
 <lastmod>2016-05-13T00:56:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/fitness/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/fitness/</loc>
 <lastmod>2016-05-13T00:56:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/food/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/food/</loc>
 <lastmod>2016-05-13T00:56:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://test.snorl.ax/tags/health/</loc>
+<loc>https://static.snorl.ax/test-sake/tags/health/</loc>
 <lastmod>2016-05-13T00:56:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
